@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Oxanium&display=swap');
+
+@layer base {
+  body {
+    background-color: #000000;
+    color: white;
+  }
+}
