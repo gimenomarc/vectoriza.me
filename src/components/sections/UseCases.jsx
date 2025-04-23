@@ -1,32 +1,34 @@
-import { FaBookOpen, FaBuilding, FaUserShield, FaGlobe } from "react-icons/fa6";
+import { FaComments, FaUsersCog, FaChartLine, FaMobileAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
+import GradientText from "../reactbits/GradientText";
+import ShinyText from "../reactbits/ShinyText";
 
 const cases = [
   {
-    icon: <FaBookOpen size={20} />,
-    title: "Asistentes sobre documentación técnica",
-    desc: "Sube manuales, políticas internas o PDFs complejos. Vectoriza.me crea un asistente que responde dudas sin perder contexto, con comprensión semántica real.",
+    icon: <FaComments size={24} />,
+    title: "Chatbots inteligentes por producto",
+    desc: "Transforma cada línea de tu catálogo en asistentes IA que explican, asesoran y venden. Cada conversación basada en tu conocimiento real. Ideal para ecommerce, software o soporte automatizado personalizado."
   },
   {
-    icon: <FaBuilding size={20} />,
-    title: "IA para intranets y equipos",
-    desc: "Tus empleados podrán hacer preguntas sobre procesos, herramientas o normativas internas. Ideal para onboarding, recursos humanos y soporte interno.",
+    icon: <FaUsersCog size={24} />,
+    title: "IA para empoderar a tus equipos",
+    desc: "Resuelve dudas internas sobre normativas, flujos o herramientas con un asistente IA entrenado con tus recursos. Soporte instantáneo para ventas, atención o RRHH."
   },
   {
-    icon: <FaUserShield size={20} />,
-    title: "Atención al cliente con IA personalizada",
-    desc: "Convierte tus FAQs, tutoriales y flujos de soporte en una experiencia conversacional con IA. Sin reglas. Sin scripts. Solo conocimiento real.",
+    icon: <FaChartLine size={24} />,
+    title: "Asistentes que entienden tus datos",
+    desc: "Convierte informes, dashboards y regulaciones en experiencias conversacionales accesibles. Cualquier persona de tu empresa podrá consultar información clave en segundos."
   },
   {
-    icon: <FaGlobe size={20} />,
-    title: "Potencia tu web o portal digital",
-    desc: "¿Y si tu web pudiera responder por sí sola? Integra Vectoriza.me para ofrecer respuestas personalizadas y contextualizadas sobre tu negocio, al instante.",
-  },
+    icon: <FaMobileAlt size={24} />,
+    title: "IA integrada en tu web o app",
+    desc: "Guía a tus usuarios con respuestas contextuales y precisas. Desde onboarding hasta procesos de compra. Sin fricción, con estilo."
+  }
 ];
 
 export default function UseCases() {
   return (
-    <section className="relative w-full min-h-screen py-32 px-6 bg-black text-white z-10">
+    <section className="relative w-full min-h-screen py-36 px-6 bg-black text-white z-10">
       <div className="max-w-6xl mx-auto text-center">
         <motion.h2
           className="text-4xl md:text-5xl font-extrabold mb-6 leading-tight tracking-tight"
@@ -34,39 +36,35 @@ export default function UseCases() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          Casos de uso reales para soluciones IA <br className="hidden md:block" />
-          que transforman tu conocimiento en resultados
+          <GradientText>
+            Casos reales de uso para empresas reales
+          </GradientText>
         </motion.h2>
 
-        <motion.p
-          className="text-white/70 text-lg max-w-3xl mx-auto mb-20"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.3, duration: 0.6 }}
-        >
-          Vectoriza.me no es un chatbot genérico. Es un sistema que entiende tu información, se entrena con tu contenido y responde con contexto real.
-        </motion.p>
+        <ShinyText
+          text="Automatiza, responde y evoluciona con IA hecha a medida para ti"
+          className="text-lg text-white/70 max-w-3xl mx-auto mb-20"
+        />
 
-        <div className="space-y-16 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-12 mt-10">
           {cases.map((item, index) => (
             <motion.div
               key={index}
-              className="flex items-start gap-6 relative group"
+              className="bg-[#0f0f0f] p-6 rounded-3xl border border-white/5 shadow-md shadow-cyan-500/5 hover:border-cyan-500/30 transition-all duration-300 hover:scale-[1.02] group text-left cursor-default"
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
             >
-              {/* Icon circle */}
-              <div className="flex-shrink-0 w-12 h-12 rounded-full bg-cyan-600/20 flex items-center justify-center border border-cyan-500/20 text-cyan-400 shadow-md shadow-cyan-500/10">
-                {item.icon}
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-12 h-12 flex items-center justify-center rounded-full bg-cyan-600/10 text-cyan-400 border border-cyan-500/10 shadow-md shadow-cyan-500/10">
+                  {item.icon}
+                </div>
+                <h3 className="text-lg font-bold text-white">
+                  <ShinyText text={item.title} />
+                </h3>
               </div>
-
-              {/* Text content */}
-              <div className="text-left">
-                <h3 className="text-lg font-semibold mb-1 text-white">{item.title}</h3>
-                <p className="text-sm text-white/60 leading-relaxed">{item.desc}</p>
-              </div>
+              <p className="text-sm text-white/60 leading-relaxed">{item.desc}</p>
             </motion.div>
           ))}
         </div>
