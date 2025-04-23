@@ -30,7 +30,7 @@ const benefits = [
 
 export default function Benefits() {
   return (
-    <section className="relative w-full min-h-screen bg-black text-white py-40 px-6 z-10 overflow-hidden">
+    <section id="benefits" className="relative w-full min-h-screen bg-black text-white py-40 px-6 z-10 overflow-hidden">
       <div className="max-w-6xl mx-auto text-center">
         {/* Subtítulo visual tipo etiqueta */}
         <p className="text-sm uppercase tracking-widest text-cyan-500 mb-4 font-mono">

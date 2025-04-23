@@ -28,7 +28,7 @@ const cases = [
 
 export default function UseCases() {
   return (
-    <section className="relative w-full min-h-screen py-36 px-6 bg-black text-white z-10">
+    <section id="usecases" className="relative w-full min-h-screen py-36 px-6 bg-black text-white z-10">
       <div className="max-w-6xl mx-auto text-center">
         <motion.h2
           className="text-4xl md:text-5xl font-extrabold mb-6 leading-tight tracking-tight"

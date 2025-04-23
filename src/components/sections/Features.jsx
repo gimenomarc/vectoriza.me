@@ -4,7 +4,7 @@ import { FaFileUpload, FaBrain, FaMagic, FaComments, FaRobot, FaCode } from 'rea
 
 export default function Features() {
   return (
-    <section className="relative z-10 min-h-screen py-32 flex flex-col justify-center bg-gradient-to-tr from-black via-black to-[#0f0f23] text-white">
+    <section id="features" className="relative z-10 min-h-screen py-32 flex flex-col justify-center bg-gradient-to-tr from-black via-black to-[#0f0f23] text-white">
       <div className="max-w-6xl mx-auto px-6 text-center">
 
         <p className="text-sm uppercase tracking-widest text-cyan-500 mb-4 font-mono">

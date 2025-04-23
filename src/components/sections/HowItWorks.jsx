@@ -26,7 +26,7 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section className="relative w-full min-h-screen py-40 px-6 bg-black text-white z-10">
+    <section id="howitworks" className="relative w-full min-h-screen py-40 px-6 bg-black text-white z-10">
       <div className="max-w-6xl mx-auto text-center">
         <motion.p
           className="text-sm uppercase tracking-widest text-cyan-500 mb-4 font-mono"

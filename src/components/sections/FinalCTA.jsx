@@ -31,7 +31,7 @@ export default function FinalCTA() {
   };
 
   return (
-    <section className="relative w-full min-h-screen py-36 px-6 from-black via-black to-[#0f0f23] text-white z-10">
+    <section id="finalcta" className="relative w-full min-h-screen py-36 px-6 from-black via-black to-[#0f0f23] text-white z-10">
       <div className="max-w-4xl mx-auto text-center">
         <motion.h2
           className="text-4xl md:text-5xl font-extrabold mb-6 leading-tight tracking-tight"

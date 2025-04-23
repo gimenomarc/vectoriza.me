@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 export default function Hero() {
   return (
-    <section className="relative w-full min-h-screen flex items-center justify-center text-center overflow-hidden bg-black px-4">
+    <section id="hero" className="relative w-full min-h-screen flex items-center justify-center text-center overflow-hidden bg-black px-4">
       {/* Decoración flotante circular */}
       <ScrollFloat className="absolute top-10 left-10 scale-75 md:scale-100 z-20">
         <CircularText text="VECTORIZA.ME*AI*KNOWLEDGE*" spinDuration={18} onHover="speedUp" />

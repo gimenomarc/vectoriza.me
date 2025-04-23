@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 export default function Intro() {
   return (
-    <section className="relative w-full h-screen overflow-hidden flex flex-col items-center justify-center bg-black pt-24">
+    <section id="intro" className="relative w-full h-screen overflow-hidden flex flex-col items-center justify-center bg-black pt-24">
       {/* Fondo animado */}
       <Hyperspeed />
 
