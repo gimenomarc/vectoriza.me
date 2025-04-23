@@ -39,14 +39,14 @@ export default function Benefits() {
 
         {/* Título visualmente sólido pero no llamativo como GradientText */}
         <motion.h2
-          className="text-3xl md:text-4xl font-extrabold mb-6 leading-tight tracking-tight"
+          className="text-3xl md:text-5xl font-extrabold mb-6 leading-tight tracking-tight"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          Tu conocimiento, potenciado por IA de forma segura y escalable
+          Tu conocimiento, potenciado por <span className="text-cyan-400">IA</span>
         </motion.h2>
-
+        
         <motion.p
           className="text-white/70 text-lg max-w-3xl mx-auto mb-20"
           initial={{ opacity: 0 }}

@@ -36,11 +36,9 @@ export default function UseCases() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <GradientText>
-            Casos reales de uso para empresas reales
-          </GradientText>
+          Casos reales de uso para{" "}
+          <span className="text-cyan-400">empresas reales</span>
         </motion.h2>
-
         <ShinyText
           text="Automatiza, responde y evoluciona con IA hecha a medida para ti"
           className="text-lg text-white/70 max-w-3xl mx-auto mb-20"

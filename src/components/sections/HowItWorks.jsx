@@ -26,7 +26,7 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section className="relative w-full min-h-screen py-36 px-6 bg-black text-white z-10">
+    <section className="relative w-full min-h-screen py-40 px-6 bg-black text-white z-10">
       <div className="max-w-6xl mx-auto text-center">
         <motion.p
           className="text-sm uppercase tracking-widest text-cyan-500 mb-4 font-mono"
@@ -38,14 +38,12 @@ export default function HowItWorks() {
         </motion.p>
 
         <motion.h2
-          className="text-3xl md:text-5xl font-extrabold mb-6 leading-tight max-w-3xl mx-auto"
+          className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight tracking-tight"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <GradientText>
-            Cómo funciona Vectoriza.me
-          </GradientText>
+          Cómo funciona <span className="text-cyan-400">Vectoriza.me</span>
         </motion.h2>
 
         <motion.p
@@ -54,7 +52,7 @@ export default function HowItWorks() {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.6 }}
         >
-          Desde que cargas tus datos hasta que empiezas a interactuar con una IA entrenada con tu contenido, todo está automatizado y optimizado.
+          Desde que cargas tus datos hasta que interactúas con tu propia IA entrenada, todo está automatizado, visual y adaptado a ti.
         </motion.p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -73,7 +71,9 @@ export default function HowItWorks() {
               <h3 className="text-xl font-bold mb-2 text-white">
                 <ShinyText text={step.title} />
               </h3>
-              <p className="text-sm text-white/60 leading-relaxed">{step.description}</p>
+              <p className="text-sm text-white/60 leading-relaxed">
+                {step.description}
+              </p>
             </motion.div>
           ))}
         </div>
