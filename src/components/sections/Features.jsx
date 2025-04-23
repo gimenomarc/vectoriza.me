@@ -11,14 +11,12 @@ export default function Features() {
           Sin código. Sin límites.
         </p>
 
-        <h2 className="text-3xl md:text-5xl font-extrabold mb-6 leading-tight max-w-3xl mx-auto">
-          <GradientText>
-            De tu contenido a una IA funcional
-          </GradientText>
+        <h2 className="text-3xl md:text-5xl font-extrabold mb-6 leading-tight max-w-4xl mx-auto">
+          De tu contenido a una <span className="text-cyan-400">IA funcional</span>
         </h2>
 
         <p className="text-base md:text-lg text-white/70 max-w-2xl mx-auto mb-20">
-          Vectoriza.me transforma textos, webs y documentos en experiencias conversacionales reales. Sin complejidad, sin perder contexto, en tu propio espacio.
+          Convierte documentos, procesos y experiencias internas en sistemas de inteligencia artificial útiles, accesibles y listos para escalar. Todo empieza con tu conocimiento.
         </p>
 
         <div className="grid md:grid-cols-3 gap-10">
@@ -46,31 +44,31 @@ const features = [
   {
     icon: <FaFileUpload />,
     title: 'Sube tu contenido',
-    desc: 'PDFs, páginas web, DOCX, texto plano... lo que tengas, lo convertimos en conocimiento estructurado.'
+    desc: 'Documentos técnicos, webs, políticas internas, FAQs... Lo que sepas, lo transformamos en conocimiento estructurado y entrenable.'
   },
   {
     icon: <FaBrain />,
     title: 'IA que contextualiza',
-    desc: 'No se limita a buscar, comprende lo que dices y responde como un experto.'
+    desc: 'No se limita a buscar palabras. Entiende contexto, relaciona ideas y responde como un experto que ha leído todo tu material.'
   },
   {
     icon: <FaMagic />,
-    title: 'Conversación mágica',
-    desc: 'Tus usuarios no verán filtros ni técnicas. Solo una IA que responde como un humano inteligente.'
+    title: 'Conversación natural',
+    desc: 'Olvídate de reglas y flujos forzados. La interacción es flexible, como hablar con un especialista que conoce tu negocio.'
   },
   {
     icon: <FaComments />,
-    title: 'Interactúa en natural',
-    desc: 'Multi-turn conversations, contexto persistente, idiomas, follow-ups… como hablas tú.'
+    title: 'Interacción en lenguaje real',
+    desc: 'Admite preguntas complejas, seguimiento de contexto, reformulaciones y multidioma. Comunicación fluida y sin fricciones.'
   },
   {
     icon: <FaRobot />,
-    title: 'Entrena y mejora',
-    desc: 'Afina respuestas, corrige errores, añade fuentes o feedback en tiempo real.'
+    title: 'Entrena y ajusta al instante',
+    desc: 'Añade nuevas fuentes, corrige respuestas o mejora precisión sin tocar código. Iteración visual en segundos.'
   },
   {
     icon: <FaCode />,
-    title: 'Sin escribir una línea',
-    desc: 'Diseñado para quien no programa y para quienes necesitan resultados ya. Visual, editable y tuyo.'
+    title: 'Resultados sin programar',
+    desc: 'Diseñado para equipos técnicos o no técnicos. Todo visual, editable y desplegable sin desarrolladores de por medio.'
   }
 ];

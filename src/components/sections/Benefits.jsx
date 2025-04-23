@@ -3,28 +3,28 @@ import GradientText from "../reactbits/GradientText";
 
 const benefits = [
   {
-    title: "Carga sin fricción",
-    text: "Sube PDFs, webs, notas o bases de datos: Vectoriza.me lo entiende todo. Limpieza automática, estructura inteligente, y listo para entrenar IA sin necesidad de pasos técnicos."
+    title: "Chatbots con tus propios documentos",
+    text: "Sube archivos como PDFs, webs o bases de datos y crea un asistente inteligente que entiende tu contenido y responde con precisión. Sin saber programar, sin complicaciones."
   },
   {
-    title: "Entendimiento real del contexto",
-    text: "No es una búsqueda. Es una comprensión profunda. Vectoriza.me interpreta preguntas complejas y genera respuestas con lógica, precisión y memoria conversacional."
+    title: "Respuestas que entienden tu negocio",
+    text: "No es solo una búsqueda. Tu chatbot entiende el contexto, da respuestas claras y útiles incluso ante preguntas complejas. Como si hablara un experto de tu equipo."
   },
   {
-    title: "Conversaciones naturales y adaptables",
-    text: "Sigue hilos, detecta matices, responde con tono profesional o informal. La IA se adapta a tu estilo de comunicación, como un experto que conoce tu negocio."
+    title: "Conversaciones humanas y naturales",
+    text: "Tu asistente puede hablar de forma profesional o cercana, seguir el hilo de una conversación y adaptarse a tu forma de comunicar. Tú marcas el tono."
   },
   {
-    title: "Iteración y mejora continua",
-    text: "Corrige, entrena y mejora al instante. Añade nuevas fuentes, cambia respuestas o amplía conocimientos sin esperar a desarrolladores. Evolución sin fricción."
+    title: "Actualiza y mejora en segundos",
+    text: "¿Cambiaste una respuesta o añadiste un nuevo documento? Tu asistente se actualiza al momento. Mejora continua sin depender de desarrolladores."
   },
   {
-    title: "Privacidad, trazabilidad y control total",
-    text: "Todo el conocimiento se procesa en tu entorno. Tienes control sobre lo que se aprende, lo que se responde y cuándo se actualiza. 100% configurable."
+    title: "Privacidad y control total",
+    text: "Todo funciona en tu entorno. Nadie accede a tus datos. Tú decides qué aprende, cómo responde y cuándo se actualiza. Transparente y seguro."
   },
   {
-    title: "Aplicaciones sin límites",
-    text: "Desde atención al cliente hasta inteligencia de negocio, onboarding o asistencia legal. Vectoriza.me crea una IA útil, escalable y precisa para cualquier industria."
+    title: "Úsalo en cualquier parte de tu empresa",
+    text: "Atención al cliente, soporte técnico, formación interna o ventas. Vectoriza.me adapta la inteligencia artificial a lo que tu empresa realmente necesita."
   }
 ];
 

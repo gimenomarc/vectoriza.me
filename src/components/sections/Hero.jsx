@@ -12,7 +12,7 @@ export default function Hero() {
         <CircularText text="VECTORIZA.ME*AI*KNOWLEDGE*" spinDuration={18} onHover="speedUp" />
       </ScrollFloat>
 
-      {/* Visual FX background (puedes integrar líneas SVG, partículas, etc.) */}
+      {/* Visual FX background */}
       <div className="absolute inset-0 z-0 pointer-events-none bg-gradient-to-br from-black via-black to-[#0f0f23]" />
 
       {/* Contenido Hero */}
@@ -29,8 +29,7 @@ export default function Hero() {
           transition={{ delay: 0.3 }}
         >
           <GradientText>
-            Transforma tu <span className="text-cyan-400">conocimiento</span> <br className="hidden md:block" />
-            en Inteligencia Artificial
+            Potencia tu negocio con <span className="text-cyan-400">IA hecha a medida</span>
           </GradientText>
         </motion.h1>
 
@@ -40,7 +39,7 @@ export default function Hero() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
         >
-          Crea asistentes conversacionales <strong className="text-cyan-300">sin código</strong>, potentes y precisos, entrenados con tu propio conocimiento.
+          Desarrollo e integración de inteligencia artificial adaptada a tus procesos, productos y datos reales. Automatiza, responde y escala con soluciones hechas para ti.
         </motion.p>
 
         <motion.p
@@ -49,7 +48,7 @@ export default function Hero() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6 }}
         >
-          Importa documentos, bases de datos o webs. Indexa, entrena y lanza tu solución IA en minutos. Vectoriza.me lo hace posible.
+          Soy <strong className="text-cyan-300">Marc Gimeno</strong>, especialista en IA aplicada. Te ayudo a convertir tu conocimiento en asistentes conversacionales inteligentes y personalizados que entienden tu negocio y mejoran tu productividad.
         </motion.p>
 
         <motion.div
@@ -60,9 +59,9 @@ export default function Hero() {
         >
           <a
             href="#contact"
-            className="px-8 py-3 bg-cyan-500 hover:bg-cyan-600 transition-all text-white text-lg rounded-full font-semibold shadow-[0_0_30px_rgba(0,255,255,0.4)] animate-pulse"
+            className="relative px-8 py-3 text-white text-lg font-semibold rounded-full border-2 border-cyan-500 bg-black hover:bg-cyan-500/10 transition-all duration-300 shadow-[0_0_20px_rgba(0,255,255,0.15)] cursor-pointer"
           >
-            Empezar gratis
+            Reservar cita gratuita
           </a>
           <ShinyText text="Descubre cómo funciona" className="text-base font-medium text-white cursor-pointer" />
         </motion.div>
