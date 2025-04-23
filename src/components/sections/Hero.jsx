@@ -59,11 +59,12 @@ export default function Hero() {
           transition={{ delay: 0.8 }}
         >
           <a
-            href="#contact"
+            href="#finalcta"
             className="relative px-8 py-3 text-white text-lg font-semibold rounded-full border-2 border-cyan-500 bg-black hover:bg-cyan-500/10 transition-all duration-300 shadow-[0_0_20px_rgba(0,255,255,0.15)] cursor-pointer"
           >
             Quiero aplicar IA en mi empresa
           </a>
+
         </motion.div>
       </motion.div>
     </section>

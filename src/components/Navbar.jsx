@@ -38,16 +38,16 @@ export default function Navbar() {
           Características
         </button>
         <button
-          onClick={() => scrollTo('usecases')}
-          className="text-white/80 hover:text-cyan-400 transition duration-300 cursor-pointer"
-        >
-          Casos de uso
-        </button>
-        <button
           onClick={() => scrollTo('howitworks')}
           className="text-white/80 hover:text-cyan-400 transition duration-300 cursor-pointer"
         >
           Cómo funciona
+        </button>
+        <button
+          onClick={() => scrollTo('usecases')}
+          className="text-white/80 hover:text-cyan-400 transition duration-300 cursor-pointer"
+        >
+          Casos de uso
         </button>
         <button
           onClick={() => scrollTo('finalcta')}

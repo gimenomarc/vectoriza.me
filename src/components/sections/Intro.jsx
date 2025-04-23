@@ -10,16 +10,15 @@ export default function Intro() {
 
       {/* Título principal más arriba con glow */}
       <motion.h1
-        className="relative -mt-40 bg-transparent text-5xl md:text-7xl font-extrabold text-center z-10 tracking-tight"
+        className="text-4xl md:text-6xl font-extrabold tracking-tight text-center z-10"
         initial={{ opacity: 0, y: 60 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
         <GradientText>
-          vectoriza.me
+          vectoriza.<span className="text-cyan-400">me</span>
         </GradientText>
       </motion.h1>
-
       {/* Slogan destacado */}
       <motion.p
         className="text-white/70 text-lg md:text-xl mt-4 px-4 max-w-2xl text-center z-10"
