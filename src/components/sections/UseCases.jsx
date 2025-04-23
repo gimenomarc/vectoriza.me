@@ -6,23 +6,23 @@ import ShinyText from "../reactbits/ShinyText";
 const cases = [
   {
     icon: <FaComments size={24} />,
-    title: "Asistentes que explican tus productos",
-    desc: "Convierte tu catálogo en chatbots que responden dudas, asesoran a los clientes y ayudan a vender. Ideal para tiendas online, servicios digitales o soporte automatizado."
+    title: "Mejora la atención al cliente",
+    desc: "Responde dudas frecuentes de forma inmediata y profesional, incluso fuera del horario comercial. Soluciones que alivian carga operativa sin perder calidad humana."
   },
   {
     icon: <FaUsersCog size={24} />,
-    title: "Soporte interno instantáneo",
-    desc: "Tu equipo podrá resolver dudas sobre procesos, herramientas o normativas al momento, con un asistente entrenado con tus documentos. Perfecto para ventas, atención al cliente o RRHH."
+    title: "Soporte interno para tu equipo",
+    desc: "Automatiza respuestas sobre procesos internos, herramientas o normativas. Ideal para formación, onboarding o asistencia constante a departamentos clave."
   },
   {
     icon: <FaChartLine size={24} />,
-    title: "Consulta tus informes con IA",
-    desc: "Tus datos, ahora fáciles de consultar. Crea asistentes que entienden dashboards, informes o PDFs técnicos, y responden en lenguaje claro. Ideal para cualquier área de la empresa."
+    title: "Consultas inteligentes sobre datos",
+    desc: "Haz que cualquier persona pueda entender y consultar información relevante de tu negocio, sin depender de analistas ni perder tiempo buscando entre archivos."
   },
   {
     icon: <FaMobileAlt size={24} />,
-    title: "IA que guía a tus usuarios",
-    desc: "Integra un asistente en tu web o app que resuelve dudas, guía procesos de compra u onboarding, y mejora la experiencia del usuario con respuestas precisas."
+    title: "Guías interactivas en web o app",
+    desc: "Mejora la experiencia de usuario ofreciendo asistencia en tiempo real en tu sitio web o aplicación: desde procesos de compra hasta soporte técnico."
   }
 ];
 
@@ -37,7 +37,7 @@ export default function UseCases() {
           transition={{ duration: 0.6 }}
         >
           Casos de uso concretos para{" "}
-          <span className="text-cyan-400">hacer crecer tu empresa con IA</span>
+          <span className="text-cyan-400">hacer crecer</span> tu empresa con IA
         </motion.h2>
         <ShinyText
           text="Descubre cómo puedes usar inteligencia artificial para responder preguntas, ayudar a tus clientes, formar a tu equipo o automatizar tareas con asistentes hechos a medida, entrenados con tu propio contenido."

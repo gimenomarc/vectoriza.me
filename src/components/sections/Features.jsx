@@ -1,6 +1,6 @@
 import GradientText from '../reactbits/GradientText';
 import ShinyText from '../reactbits/ShinyText';
-import { FaFileUpload, FaBrain, FaMagic, FaComments, FaRobot, FaCode } from 'react-icons/fa';
+import { FaFileUpload, FaBrain, FaBolt, FaComments, FaSyncAlt, FaCode } from 'react-icons/fa';
 
 export default function Features() {
   return (
@@ -8,15 +8,15 @@ export default function Features() {
       <div className="max-w-6xl mx-auto px-6 text-center">
 
         <p className="text-sm uppercase tracking-widest text-cyan-500 mb-4 font-mono">
-          Sin código. Sin límites.
+          Lo que puedo hacer por tu empresa
         </p>
 
         <h2 className="text-3xl md:text-5xl font-extrabold mb-6 leading-tight max-w-4xl mx-auto">
-          De tu contenido a una <span className="text-cyan-400">IA funcional</span>
+          Soluciones de <span className="text-cyan-400">IA práctica y personalizada</span>
         </h2>
 
         <p className="text-base md:text-lg text-white/70 max-w-2xl mx-auto mb-20">
-          Convierte documentos, procesos y experiencias internas en sistemas de inteligencia artificial útiles, accesibles y listos para escalar. Todo empieza con tu conocimiento.
+          Diseño e implemento sistemas de inteligencia artificial adaptados a tu contenido, tu sector y tus objetivos. Automatiza procesos, resuelve dudas y mejora el rendimiento de tu equipo sin depender de desarrolladores.
         </p>
 
         <div className="grid md:grid-cols-3 gap-10">
@@ -43,32 +43,32 @@ export default function Features() {
 const features = [
   {
     icon: <FaFileUpload />,
-    title: 'Sube tu contenido',
-    desc: 'Documentos técnicos, webs, políticas internas, FAQs... Lo que sepas, lo transformamos en conocimiento estructurado y entrenable.'
+    title: 'Trabajo con tu contenido real',
+    desc: 'Puedo utilizar tus documentos, procesos internos, manuales o bases de datos para crear soluciones de IA que respondan dudas, guíen tareas o automaticen pasos repetitivos.'
   },
   {
     icon: <FaBrain />,
-    title: 'IA que contextualiza',
-    desc: 'No se limita a buscar palabras. Entiende contexto, relaciona ideas y responde como un experto que ha leído todo tu material.'
+    title: 'IA que entiende tu negocio',
+    desc: 'Desarrollo sistemas que no repiten lo que encuentran: comprenden tu lenguaje, tu lógica y tus reglas. Están entrenados con lo que hace única a tu empresa.'
   },
   {
-    icon: <FaMagic />,
-    title: 'Conversación natural',
-    desc: 'Olvídate de reglas y flujos forzados. La interacción es flexible, como hablar con un especialista que conoce tu negocio.'
+    icon: <FaBolt />,
+    title: 'Automatización que ahorra tiempo',
+    desc: 'Reduzco tareas manuales y tiempos de respuesta. Ganas productividad real al automatizar procesos con precisión y sin esfuerzo.'
   },
   {
     icon: <FaComments />,
-    title: 'Interacción en lenguaje real',
-    desc: 'Admite preguntas complejas, seguimiento de contexto, reformulaciones y multidioma. Comunicación fluida y sin fricciones.'
+    title: 'Respuestas claras a preguntas reales',
+    desc: 'Desde información técnica hasta preguntas frecuentes. La IA responde con lógica, contexto y el estilo que necesite tu empresa.'
   },
   {
-    icon: <FaRobot />,
-    title: 'Entrena y ajusta al instante',
-    desc: 'Añade nuevas fuentes, corrige respuestas o mejora precisión sin tocar código. Iteración visual en segundos.'
+    icon: <FaSyncAlt />,
+    title: 'Actualización constante y sin fricción',
+    desc: 'Si cambias tus contenidos o procesos, la IA se adapta. Puedo actualizarla en cualquier momento para que evolucione contigo.'
   },
   {
     icon: <FaCode />,
-    title: 'Resultados sin programar',
-    desc: 'Diseñado para equipos técnicos o no técnicos. Todo visual, editable y desplegable sin desarrolladores de por medio.'
+    title: 'Sin que tú programes nada',
+    desc: 'Tú solo defines qué necesitas. Yo me encargo del diseño, desarrollo e implementación. Todo funciona sin que tengas que escribir una línea de código.'
   }
 ];

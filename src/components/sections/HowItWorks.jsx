@@ -6,21 +6,21 @@ import ShinyText from "../reactbits/ShinyText";
 const steps = [
   {
     icon: <FaUpload size={28} />,
-    title: "Carga tus fuentes de conocimiento",
+    title: "Analizo tu situación y objetivos",
     description:
-      "Documentos, webs, bases de datos... Vectoriza.me transforma todo en conocimiento estructurado y usable por IA sin necesidad de conversión manual."
+      "Estudiamos cómo funciona tu negocio, qué procesos quieres mejorar y qué herramientas ya usas. Todo empieza por entender qué necesitas realmente."
   },
   {
     icon: <FaCogs size={28} />,
-    title: "Procesamos, entrenamos y afinamos",
+    title: "Diseño una solución a medida",
     description:
-      "Dividimos tu contenido, generamos embeddings y entrenamos un sistema conversacional que responde con precisión, adaptado a tu contexto."
+      "Propongo y desarrollo una solución de inteligencia artificial adaptada a tu contexto: práctica, usable, sin complicaciones técnicas para tu equipo."
   },
   {
     icon: <FaComments size={28} />,
-    title: "Habla con tu información",
+    title: "Implementamos y empezáis a usarla",
     description:
-      "Consulta todo tu conocimiento con lenguaje natural, recibe respuestas inteligentes y contextualizadas, sin scripts ni configuraciones complicadas."
+      "Pongo en marcha la solución en tu entorno y os acompaño para que podáis aprovecharla desde el primer día. Mejora real, sin curva de aprendizaje."
   }
 ];
 
@@ -34,7 +34,7 @@ export default function HowItWorks() {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6 }}
         >
-          Sin complicaciones. Solo resultados.
+          Trabajo simple, resultados potentes
         </motion.p>
 
         <motion.h2
@@ -43,8 +43,9 @@ export default function HowItWorks() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          Cómo funciona <span className="text-cyan-400">Vectoriza.me</span>
+          ¿Cómo trabajamos <span className="text-cyan-400">juntos</span>?
         </motion.h2>
+
 
         <motion.p
           className="text-white/70 text-base md:text-lg max-w-2xl mx-auto mb-20"
@@ -52,8 +53,9 @@ export default function HowItWorks() {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.6 }}
         >
-          Desde que cargas tus datos hasta que interactúas con tu propia IA entrenada, todo está automatizado, visual y adaptado a ti.
+          No necesitas experiencia técnica ni saber de inteligencia artificial. Me explicas tus objetivos y retos, y yo diseño e implemento una solución adaptada que aporta valor desde el primer día.
         </motion.p>
+
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {steps.map((step, i) => (
