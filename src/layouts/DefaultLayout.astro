@@ -1,7 +1,7 @@
 ---
 import Navbar from '../components/Navbar.jsx';
 import Footer from '../components/Footer.jsx';
-import '../styles/global.css';
+import { Analytics } from '@vercel/analytics/astro';
 ---
 
 <html lang="es">
@@ -10,9 +10,12 @@ import '../styles/global.css';
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>vectoriza.me</title>
   </head>
-  <body class="text-white font-sans bg-black">
+  <body class="text-white font-sans">
     <Navbar client:load />
-    <slot />
+    <main>
+      <slot />
+    </main>
     <Footer />
+    <Analytics />
   </body>
 </html>
