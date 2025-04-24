@@ -15,7 +15,7 @@ import "../styles/global.css";
 <Layout>
   <ScrollIndicator client:visible />
 
-  <main class="snap-y snap-mandatory overflow-y-scroll h-screen scroll-smooth bg-black">
+  <main class="overflow-y-auto scroll-smooth bg-black">
     <section class="snap-start min-h-screen"><Intro client:only="react" /></section>
     <section class="snap-start min-h-screen"><Hero client:visible /></section>
     <section class="snap-start min-h-screen"><Features client:visible /></section>
@@ -23,6 +23,5 @@ import "../styles/global.css";
     <section class="snap-start min-h-screen"><Benefits client:visible /></section>
     <section class="snap-start min-h-screen"><HowItWorks client:visible /></section>
     <section class="snap-start min-h-screen"><FinalCTA client:visible /></section>
-    <section class="h-auto"><Footer /></section>
   </main>
 </Layout>

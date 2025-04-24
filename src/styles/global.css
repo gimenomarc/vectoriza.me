@@ -48,8 +48,8 @@
 
 html,
 body {
-  height: 100%;
-  overflow: hidden; /* importante para que no interfiera con el scroll del main */
+  height: auto;
+  overflow: auto;
 }
 html {
   scroll-behavior: smooth;
@@ -60,15 +60,7 @@ html {
     display: none;
   }
 }
-html {
-  scroll-behavior: smooth;
-  height: 100%;
-}
 
-body {
-  height: 100%;
-  overflow: hidden;
-}
 /* Elimina el scrollbar visible pero mantiene el scroll funcional */
 main::-webkit-scrollbar {
   width: 0px;
