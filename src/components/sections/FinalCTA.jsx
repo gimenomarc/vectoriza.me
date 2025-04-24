@@ -23,7 +23,7 @@ export default function FinalCTA() {
   };
 
   return (
-    <section id="finalcta" className="snap-start h-screen w-full bg-black text-white z-10 flex items-center justify-center px-6">
+    <section id="finalcta" className="snap-start min-h-[100dvh] w-full bg-black text-white z-10 flex items-center justify-center px-6 py-16">
       <div className="w-full max-w-4xl mx-auto flex flex-col items-center justify-center text-center gap-10">
         <motion.h2
           className="text-4xl md:text-5xl font-extrabold leading-tight tracking-tight"
