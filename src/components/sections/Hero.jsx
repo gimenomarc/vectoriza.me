@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="snap-start h-screen w-full flex items-center justify-center text-center overflow-hidden bg-black relative px-6"
+      className="w-full py-32 px-6 bg-black relative text-center overflow-hidden"
     >
       {/* Decoración flotante circular */}
       <ScrollFloat className="absolute top-10 left-10 scale-75 md:scale-100 z-20">
@@ -20,7 +20,7 @@ export default function Hero() {
 
       {/* Contenido principal */}
       <motion.div
-        className="relative z-10 max-w-5xl backdrop-blur-2xl bg-black/50 rounded-3xl px-6 py-14 md:px-8 md:py-16 border border-white/10 shadow-[0_0_60px_rgba(0,255,255,0.1)]"
+        className="relative z-10 max-w-5xl backdrop-blur-2xl bg-black/50 rounded-3xl px-6 py-14 md:px-8 md:py-16 border border-white/10 shadow-[0_0_60px_rgba(0,255,255,0.1)] mx-auto"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}

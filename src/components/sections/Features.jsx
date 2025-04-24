@@ -38,8 +38,8 @@ const features = [
 
 export default function Features() {
   return (
-    <section id="features" className="snap-start h-screen w-full bg-black text-white flex items-center justify-center px-6">
-      <div className="max-w-6xl mx-auto flex flex-col items-center text-center gap-12">
+    <section id="features" className="w-full py-32 px-6 bg-black text-white">
+      <div className="max-w-6xl mx-auto flex flex-col items-center text-center gap-16">
         <div>
           <p className="text-sm uppercase tracking-widest text-cyan-500 mb-2 font-mono">
             Lo que puedo hacer por tu empresa
@@ -54,11 +54,11 @@ export default function Features() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {features.map(({ icon, title, desc }, idx) => (
             <motion.div
               key={idx}
-              className="bg-[#0f0f0f] rounded-2xl p-6 border border-white/5 hover:border-cyan-500/30 transition-all duration-300 hover:scale-[1.015] group shadow-md shadow-cyan-500/5 flex flex-col items-center text-center h-full"
+              className="bg-[#0f0f0f] rounded-2xl p-6 border border-white/5 hover:border-cyan-500/30 transition-all duration-300 hover:scale-[1.015] group shadow-md shadow-cyan-500/5 flex flex-col items-center text-center"
               initial={{ scale: 0.96, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.4, delay: idx * 0.1, ease: 'easeOut' }}
@@ -69,7 +69,7 @@ export default function Features() {
               <h3 className="text-base font-semibold mb-2 text-white">
                 <ShinyText text={title} />
               </h3>
-              <p className="text-sm text-white/60 leading-snug mt-auto">
+              <p className="text-sm text-white/60 leading-snug">
                 {desc}
               </p>
             </motion.div>
