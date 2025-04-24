@@ -1101,7 +1101,12 @@ const Hyperspeed = ({ effectOptions = {
   }, []);
 
   return (
-    <div id="lights" ref={hyperspeed}></div>
+    <div
+      id="lights"
+      ref={hyperspeed}
+      className="select-none touch-none pointer-events-auto"
+      onContextMenu={(e) => e.preventDefault()}
+    />
   );
 }
 
