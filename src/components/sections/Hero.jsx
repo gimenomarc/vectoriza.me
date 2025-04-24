@@ -6,8 +6,10 @@ import { motion } from 'framer-motion';
 
 export default function Hero() {
   return (
-    <section id="hero" className="relative w-full min-h-[80vh] flex items-center justify-center text-center overflow-hidden bg-black px-4 md:mt-">
-
+    <section
+      id="hero"
+      className="relative w-full min-h-[80vh] flex items-center justify-center text-center overflow-hidden bg-black px-4 pt-32 md:pt-52 pb-20 md:pb-32"
+    >
       {/* Decoración flotante circular */}
       <ScrollFloat className="absolute top-10 left-10 scale-75 md:scale-100 z-20">
         <CircularText text="VECTORIZA.ME*AI*KNOWLEDGE*" spinDuration={18} onHover="speedUp" />
@@ -62,7 +64,7 @@ export default function Hero() {
             href="#finalcta"
             className="relative px-6 py-3 text-white text-base font-semibold rounded-full border-2 border-cyan-500 bg-black hover:bg-cyan-500/10 transition-all duration-300 shadow-[0_0_20px_rgba(0,255,255,0.15)] cursor-pointer"
           >
-            Quiero aplicar IA en mi empresa
+            Quiero una propuesta personalizada
           </a>
         </motion.div>
       </motion.div>

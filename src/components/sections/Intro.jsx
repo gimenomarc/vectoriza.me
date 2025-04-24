@@ -1,5 +1,4 @@
 import Hyperspeed from '../reactbits/Hyperspeed.jsx';
-import GradientText from '../reactbits/GradientText';
 import { motion } from 'framer-motion';
 
 export default function Intro() {
@@ -8,16 +7,14 @@ export default function Intro() {
       {/* Fondo animado */}
       <Hyperspeed />
 
-      {/* Título principal más arriba con glow */}
+      {/* Título principal - mismo estilo que navbar pero más grande */}
       <motion.h1
-        className="text-4xl md:text-6xl font-extrabold tracking-tight text-center z-10"
+        className="text-4xl md:text-6xl font-extrabold tracking-tight text-white hover:text-cyan-400 transition cursor-pointer text-center z-10 mt-[-150px]"
         initial={{ opacity: 0, y: 60 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        <GradientText>
-          vectoriza.<span className="text-cyan-400">me</span>
-        </GradientText>
+        vectoriza.<span className="text-cyan-400">me</span>
       </motion.h1>
       {/* Slogan destacado */}
       <motion.p
