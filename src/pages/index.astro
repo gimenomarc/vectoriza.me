@@ -17,7 +17,7 @@ import "../styles/global.css";
   <Navbar client:load />
   <ScrollIndicator client:visible />
 
-  <main class="overflow-y-scroll h-screen scroll-smooth bg-black md:snap-y md:snap-mandatory">
+  <main class="overflow-y-scroll min-h-screen scroll-smooth bg-black">
     <section class="snap-start min-h-screen"><Intro client:only="react" /></section>
     <section class="snap-start min-h-screen"><Hero client:visible /></section>
     <section class="snap-start min-h-screen"><Features client:visible /></section>
