@@ -17,11 +17,11 @@ export default function Navbar() {
     { id: 'intro', label: 'Inicio' },
     { id: 'hero', label: 'Qué hago' },
     { id: 'features', label: 'Soluciones IA' },
-    { id: 'usecases', label: 'Casos reales' },
-    { id: 'benefits', label: 'Antes y después' },
+    { id: 'benefits', label: 'Antes y después' }, // ← aquí actualizado
+    { id: 'usecases', label: 'Casos de uso' },     // ← sigue presente, si quieres lo renombramos
     { id: 'howitworks', label: 'Cómo trabajamos' },
     { id: 'finalcta', label: 'Contacto' }
-  ];
+  ];  
 
   return (
     <motion.nav

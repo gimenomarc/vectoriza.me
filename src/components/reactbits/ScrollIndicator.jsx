@@ -5,10 +5,10 @@ import { useEffect, useState } from 'react';
 
 const sections = [
   { id: 'intro', label: 'Inicio' },
-  { id: 'hero', label: 'Hero' },
-  { id: 'features', label: 'IA' },
-  { id: 'usecases', label: 'Casos' },
-  { id: 'benefits', label: 'Impacto' },
+  { id: 'hero', label: 'Qué hago' },
+  { id: 'features', label: 'Soluciones IA' },
+  { id: 'benefits', label: 'Antes y después' },
+  { id: 'usecases', label: 'Casos de uso' },
   { id: 'howitworks', label: 'Proceso' },
   { id: 'finalcta', label: 'Contacto' }
 ];

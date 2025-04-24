@@ -2,7 +2,6 @@
 import Layout from '../layouts/DefaultLayout.astro';
 import ScrollIndicator from '../components/reactbits/ScrollIndicator.jsx';
 import Navbar from '../components/Navbar.jsx';
-import Footer from '../components/Footer.jsx';
 import Hero from '../components/sections/Hero.jsx';
 import Intro from '../components/sections/Intro.jsx';
 import Features from '../components/sections/Features.jsx';
@@ -21,8 +20,8 @@ import "../styles/global.css";
     <section class="snap-start min-h-screen"><Intro client:only="react" /></section>
     <section class="snap-start min-h-screen"><Hero client:visible /></section>
     <section class="snap-start min-h-screen"><Features client:visible /></section>
-    <section class="snap-start min-h-screen"><UseCases client:visible /></section>
     <section class="snap-start min-h-screen"><Benefits client:visible /></section>
+    <section class="snap-start min-h-screen"><UseCases client:visible /></section>
     <section class="snap-start min-h-screen"><HowItWorks client:visible /></section>
     <section class="snap-start min-h-screen"><FinalCTA client:visible /></section>
   </main>
