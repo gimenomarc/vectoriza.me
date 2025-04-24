@@ -42,6 +42,16 @@
   }
 }
 
+body,
+nav,
+#lights {
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+
 .animate-borderPulse {
   animation: borderPulse 3s linear infinite;
 }
