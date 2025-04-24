@@ -22,7 +22,10 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section id="howitworks" className="w-full py-32 px-6 bg-black text-white z-10">
+    <section
+      id="howitworks"
+      className="w-full min-h-screen flex items-center justify-center px-6 bg-black text-white z-10"
+    >
       <div className="max-w-6xl mx-auto flex flex-col items-center text-center gap-16">
         <div className="flex flex-col gap-4">
           <p className="text-sm uppercase tracking-widest text-cyan-500 font-mono">

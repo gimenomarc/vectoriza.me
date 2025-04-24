@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 
 export default function Benefits() {
   return (
-    <section id="benefits" className="snap-start h-screen w-full bg-black text-white z-10 flex items-center justify-center px-6">
-      <div className="max-w-6xl mx-auto text-center flex flex-col items-center gap-12">
+    <section id="benefits" className="w-full py-32 px-6 bg-black text-white z-10">
+      <div className="max-w-6xl mx-auto text-center flex flex-col items-center gap-24">
         <div>
           <p className="text-sm uppercase tracking-widest text-cyan-500 mb-2 font-mono">
             Lo que cambia al aplicar IA
@@ -29,7 +29,7 @@ export default function Benefits() {
           </motion.p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+        <div className="relative grid md:grid-cols-2 gap-20 max-w-5xl mx-auto items-center">
           {/* ANTES */}
           <motion.div
             initial={{ scale: 0.96, opacity: 0 }}
@@ -48,6 +48,20 @@ export default function Benefits() {
               <p>Procesos lentos y difíciles de escalar.</p>
             </div>
           </motion.div>
+
+          {/* FLECHA NEON */}
+          <div className="hidden md:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-24 h-24 text-cyan-400 drop-shadow-[0_0_15px_rgba(0,255,255,0.6)] animate-pulse"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={1.5}
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          </div>
 
           {/* DESPUÉS */}
           <motion.div

@@ -70,3 +70,46 @@ main {
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE/Edge */
 }
+
+/* ==== Neon scroll personalizado ==== */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-y: scroll;
+  scrollbar-color: #00ffff33 transparent;
+  scrollbar-width: thin;
+}
+/* ==== Scrollbar neon limpio y elegante ==== */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-y: scroll;
+  scrollbar-color: #00ffff transparent;
+  scrollbar-width: thin;
+}
+
+/* WebKit scroll (Chrome/Safari/Edge) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #00ffff;
+  border-radius: 9999px;
+  border: 2px solid rgba(0, 255, 255, 0.2);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
+  transition: box-shadow 0.3s ease;
+}
+
+/* Hover effect más suave */
+::-webkit-scrollbar-thumb:hover {
+  box-shadow: 0 0 16px rgba(0, 255, 255, 0.9);
+}
