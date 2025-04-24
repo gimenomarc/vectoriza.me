@@ -12,7 +12,7 @@ export default function Features() {
         </p>
 
         <h2 className="text-3xl md:text-5xl font-extrabold mb-6 leading-tight max-w-4xl mx-auto">
-          Soluciones de <span className="text-cyan-400">IA práctica y personalizada</span>
+          Soluciones de IA<span className="text-cyan-400"> personalizada</span>
         </h2>
 
         <p className="text-base md:text-lg text-white/70 max-w-2xl mx-auto mb-20">

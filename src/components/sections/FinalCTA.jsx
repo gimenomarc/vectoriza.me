@@ -40,7 +40,7 @@ export default function FinalCTA() {
           transition={{ duration: 0.6 }}
         >
           <GradientText>
-            Empieza a trabajar con IA real
+            Empieza a trabajar con IA 
           </GradientText>
         </motion.h2>
 

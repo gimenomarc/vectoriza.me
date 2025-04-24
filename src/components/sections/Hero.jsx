@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 export default function Hero() {
   return (
-    <section id="hero" className="relative w-full min-h-screen flex items-center justify-center text-center overflow-hidden bg-black px-4">
+    <section id="hero" className="relative w-full min-h-[80vh] flex items-center justify-center text-center overflow-hidden bg-black px-4 md:mt-">
 
       {/* Decoración flotante circular */}
       <ScrollFloat className="absolute top-10 left-10 scale-75 md:scale-100 z-20">
@@ -18,13 +18,13 @@ export default function Hero() {
 
       {/* Contenido principal */}
       <motion.div
-        className="relative z-10 max-w-5xl backdrop-blur-2xl bg-black/50 rounded-3xl px-8 py-20 border border-white/10 shadow-[0_0_60px_rgba(0,255,255,0.1)]"
+        className="relative z-10 max-w-5xl backdrop-blur-2xl bg-black/50 rounded-3xl px-6 py-14 md:px-8 md:py-16 border border-white/10 shadow-[0_0_60px_rgba(0,255,255,0.1)]"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
         <motion.h1
-          className="text-5xl md:text-7xl font-extrabold leading-tight tracking-tight mb-8"
+          className="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight mb-6"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3 }}
@@ -35,7 +35,7 @@ export default function Hero() {
         </motion.h1>
 
         <motion.p
-          className="text-lg md:text-xl text-white/80 mb-4 leading-relaxed"
+          className="text-base md:text-lg text-white/80 mb-4 leading-relaxed"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
@@ -44,7 +44,7 @@ export default function Hero() {
         </motion.p>
 
         <motion.p
-          className="text-base text-white/60 max-w-2xl mx-auto mb-10"
+          className="text-sm text-white/60 max-w-2xl mx-auto mb-8"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6 }}
@@ -60,11 +60,10 @@ export default function Hero() {
         >
           <a
             href="#finalcta"
-            className="relative px-8 py-3 text-white text-lg font-semibold rounded-full border-2 border-cyan-500 bg-black hover:bg-cyan-500/10 transition-all duration-300 shadow-[0_0_20px_rgba(0,255,255,0.15)] cursor-pointer"
+            className="relative px-6 py-3 text-white text-base font-semibold rounded-full border-2 border-cyan-500 bg-black hover:bg-cyan-500/10 transition-all duration-300 shadow-[0_0_20px_rgba(0,255,255,0.15)] cursor-pointer"
           >
             Quiero aplicar IA en mi empresa
           </a>
-
         </motion.div>
       </motion.div>
     </section>
