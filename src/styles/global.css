@@ -69,3 +69,12 @@ body {
   height: 100%;
   overflow: hidden;
 }
+/* Elimina el scrollbar visible pero mantiene el scroll funcional */
+main::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+main {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
