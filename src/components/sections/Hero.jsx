@@ -8,15 +8,15 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative w-full min-h-[80vh] flex items-center justify-center text-center overflow-hidden bg-black px-4 pt-32 md:pt-52 pb-20 md:pb-32"
+      className="snap-start h-screen w-full flex items-center justify-center text-center overflow-hidden bg-black relative px-6"
     >
       {/* Decoración flotante circular */}
       <ScrollFloat className="absolute top-10 left-10 scale-75 md:scale-100 z-20">
         <CircularText text="VECTORIZA.ME*AI*KNOWLEDGE*" spinDuration={18} onHover="speedUp" />
       </ScrollFloat>
 
-      {/* Fondo visual */}
-      <div className="absolute inset-0 z-0 pointer-events-none bg-gradient-to-br from-black via-black to-[#0f0f23]" />
+      {/* Fondo visual limpio */}
+      <div className="absolute inset-0 z-0 pointer-events-none bg-black" />
 
       {/* Contenido principal */}
       <motion.div

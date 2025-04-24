@@ -45,3 +45,27 @@
 .animate-borderPulse {
   animation: borderPulse 3s linear infinite;
 }
+
+html,
+body {
+  height: 100%;
+  overflow: hidden; /* importante para que no interfiera con el scroll del main */
+}
+html {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+  .scroll-indicator {
+    display: none;
+  }
+}
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  overflow: hidden;
+}

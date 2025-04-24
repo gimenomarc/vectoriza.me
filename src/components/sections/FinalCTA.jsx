@@ -23,10 +23,10 @@ export default function FinalCTA() {
   };
 
   return (
-    <section id="finalcta" className="relative w-full min-h-screen py-36 px-6 from-black via-black to-[#0f0f23] text-white z-10">
-      <div className="max-w-4xl mx-auto text-center">
+    <section id="finalcta" className="snap-start h-screen w-full bg-black text-white z-10 flex items-center justify-center px-6">
+      <div className="w-full max-w-4xl mx-auto flex flex-col items-center justify-center text-center gap-10">
         <motion.h2
-          className="text-4xl md:text-5xl font-extrabold mb-6 leading-tight tracking-tight"
+          className="text-4xl md:text-5xl font-extrabold leading-tight tracking-tight"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -38,14 +38,14 @@ export default function FinalCTA() {
 
         <ShinyText
           text="Cuéntame qué hace tu empresa, qué problemas quieres resolver o qué ideas tienes, y te propondré cómo podríamos aplicar inteligencia artificial a medida."
-          className="text-lg md:text-xl max-w-2xl mx-auto mb-14"
+          className="text-lg md:text-xl max-w-2xl mx-auto"
         />
 
         <form
           onSubmit={handleSubmit}
-          className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left bg-[#0f0f0f] p-8 rounded-3xl border border-white/10 shadow-[0_0_60px_rgba(0,255,255,0.05)]"
+          className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left bg-[#0f0f0f] p-8 rounded-3xl border border-white/10 shadow-[0_0_60px_rgba(0,255,255,0.05)] w-full"
         >
-          {[ 
+          {[
             { label: 'Nombre', name: 'name', type: 'text' },
             { label: 'Email de contacto', name: 'email', type: 'email' },
             { label: 'Nombre de la empresa o proyecto', name: 'company', type: 'text' },

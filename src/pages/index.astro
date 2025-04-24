@@ -1,21 +1,26 @@
 ---
 import Layout from '../layouts/DefaultLayout.astro';
-import Intro from '../components/sections/Intro.jsx';
+import ScrollIndicator from '../components/reactbits/ScrollIndicator.jsx';
 import Hero from '../components/sections/Hero.jsx';
+import Intro from '../components/sections/Intro.jsx';
 import Features from '../components/sections/Features.jsx';
 import HowItWorks from '../components/sections/HowItWorks.jsx';
 import UseCases from '../components/sections/UseCases.jsx';
-import FinalCTA from '../components/sections/FinalCTA.jsx';
 import Benefits from '../components/sections/Benefits.jsx';
+import FinalCTA from '../components/sections/FinalCTA.jsx';
 import "../styles/global.css";
 ---
 
 <Layout>
-  <Intro client:only="react" />
-  <Hero client:visible />
-  <Features client:visible />
-  <HowItWorks client:visible />
-  <UseCases client:visible />
-  <Benefits client:visible />
-  <FinalCTA client:visible />
-</Layout>
+  <ScrollIndicator client:visible />
+
+  <main class="snap-y snap-mandatory overflow-y-scroll h-screen scroll-smooth bg-black">
+    <section class="snap-start min-h-screen"><Intro client:only="react" /></section>
+    <section class="snap-start min-h-screen"><Hero client:visible /></section>
+    <section class="snap-start min-h-screen"><Features client:visible /></section>
+    <section class="snap-start min-h-screen"><UseCases client:visible /></section>
+    <section class="snap-start min-h-screen"><Benefits client:visible /></section>
+    <section class="snap-start min-h-screen"><HowItWorks client:visible /></section>
+    <section class="snap-start min-h-screen"><FinalCTA client:visible /></section>
+  </main>
+  

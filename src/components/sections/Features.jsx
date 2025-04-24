@@ -1,44 +1,7 @@
 import GradientText from '../reactbits/GradientText';
 import ShinyText from '../reactbits/ShinyText';
 import { FaFileUpload, FaBrain, FaBolt, FaComments, FaSyncAlt, FaCode } from 'react-icons/fa';
-
-export default function Features() {
-  return (
-    <section id="features" className="relative z-10 min-h-screen py-32 flex flex-col justify-center bg-gradient-to-tr from-black via-black to-[#0f0f23] text-white">
-      <div className="max-w-6xl mx-auto px-6 text-center">
-
-        <p className="text-sm uppercase tracking-widest text-cyan-500 mb-4 font-mono">
-          Lo que puedo hacer por tu empresa
-        </p>
-
-        <h2 className="text-3xl md:text-5xl font-extrabold mb-6 leading-tight max-w-4xl mx-auto">
-          Soluciones de IA<span className="text-cyan-400"> personalizada</span>
-        </h2>
-
-        <p className="text-base md:text-lg text-white/70 max-w-2xl mx-auto mb-20">
-          Diseño e implemento sistemas de inteligencia artificial adaptados a tu contenido, tu sector y tus objetivos. Automatiza procesos, resuelve dudas y mejora el rendimiento de tu equipo sin depender de desarrolladores.
-        </p>
-
-        <div className="grid md:grid-cols-3 gap-10">
-          {features.map(({ icon, title, desc }, idx) => (
-            <div
-              key={idx}
-              className="bg-[#0f0f0f] rounded-2xl p-6 border border-white/5 hover:border-cyan-500/30 transition-all duration-300 hover:scale-[1.02] group shadow-md shadow-cyan-500/5"
-            >
-              <div className="mb-4 text-cyan-400 text-3xl group-hover:animate-pulse">
-                {icon}
-              </div>
-              <h3 className="text-xl font-bold mb-2 text-white">
-                <ShinyText text={title} />
-              </h3>
-              <p className="text-sm text-white/60">{desc}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
+import { motion } from 'framer-motion';
 
 const features = [
   {
@@ -72,3 +35,47 @@ const features = [
     desc: 'Tú solo defines qué necesitas. Yo me encargo del diseño, desarrollo e implementación. Todo funciona sin que tengas que escribir una línea de código.'
   }
 ];
+
+export default function Features() {
+  return (
+    <section id="features" className="snap-start h-screen w-full bg-black text-white flex items-center justify-center px-6">
+      <div className="max-w-6xl mx-auto flex flex-col items-center text-center gap-12">
+        <div>
+          <p className="text-sm uppercase tracking-widest text-cyan-500 mb-2 font-mono">
+            Lo que puedo hacer por tu empresa
+          </p>
+
+          <h2 className="text-3xl md:text-5xl font-extrabold leading-tight max-w-4xl mx-auto">
+            Soluciones de IA<span className="text-cyan-400"> personalizada</span>
+          </h2>
+
+          <p className="text-base md:text-lg text-white/70 max-w-2xl mx-auto mt-4">
+            Diseño e implemento sistemas de inteligencia artificial adaptados a tu contenido, tu sector y tus objetivos. Automatiza procesos, resuelve dudas y mejora el rendimiento de tu equipo sin depender de desarrolladores.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-8">
+          {features.map(({ icon, title, desc }, idx) => (
+            <motion.div
+              key={idx}
+              className="bg-[#0f0f0f] rounded-2xl p-6 border border-white/5 hover:border-cyan-500/30 transition-all duration-300 hover:scale-[1.015] group shadow-md shadow-cyan-500/5 flex flex-col items-center text-center h-full"
+              initial={{ scale: 0.96, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.4, delay: idx * 0.1, ease: 'easeOut' }}
+            >
+              <div className="w-12 h-12 mb-4 flex items-center justify-center rounded-full bg-cyan-500/10 border border-cyan-400/20 text-cyan-400 text-xl group-hover:scale-110 transition-transform duration-300 shadow-[0_0_12px_rgba(0,255,255,0.1)]">
+                {icon}
+              </div>
+              <h3 className="text-base font-semibold mb-2 text-white">
+                <ShinyText text={title} />
+              </h3>
+              <p className="text-sm text-white/60 leading-snug mt-auto">
+                {desc}
+              </p>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}

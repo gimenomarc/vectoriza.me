@@ -6,29 +6,29 @@ import ShinyText from "../reactbits/ShinyText";
 const cases = [
   {
     icon: <FaComments size={24} />,
-    title: "Mejora la atención al cliente",
-    desc: "Responde dudas frecuentes de forma inmediata y profesional, incluso fuera del horario comercial. Soluciones que alivian carga operativa sin perder calidad humana."
+    title: "Atiende sin límites, las 24h",
+    desc: "Chatbots inteligentes que responden al instante, resuelven preguntas frecuentes, gestionan incidencias y solo escalan lo realmente urgente. Funciona día y noche, sin colapsar a tu equipo humano. Perfecto para ecommerce, servicios o cualquier empresa con alta demanda."
   },
   {
     icon: <FaUsersCog size={24} />,
-    title: "Soporte interno para tu equipo",
-    desc: "Automatiza respuestas sobre procesos internos, herramientas o normativas. Ideal para formación, onboarding o asistencia constante a departamentos clave."
+    title: "Tu equipo, más autónomo",
+    desc: "¿Cuántas veces alguien hace la misma pregunta? Crea un asistente interno que explique procesos, herramientas, políticas y más. Ideal para el onboarding de nuevas personas, resolver dudas frecuentes y liberar tiempo a RRHH y managers."
   },
   {
     icon: <FaChartLine size={24} />,
-    title: "Consultas inteligentes sobre datos",
-    desc: "Haz que cualquier persona pueda entender y consultar información relevante de tu negocio, sin depender de analistas ni perder tiempo buscando entre archivos."
+    title: "Haz preguntas a tus datos (¡como si hablaras con alguien!)",
+    desc: "Transforma tus hojas de cálculo y reportes en un sistema accesible por lenguaje natural. Pregunta '¿cómo fueron las ventas el último trimestre?' y obtén la respuesta al momento, sin buscar entre archivos ni depender de nadie."
   },
   {
     icon: <FaMobileAlt size={24} />,
-    title: "Guías interactivas en web o app",
-    desc: "Mejora la experiencia de usuario ofreciendo asistencia en tiempo real en tu sitio web o aplicación: desde procesos de compra hasta soporte técnico."
+    title: "Guía a tus usuarios en vivo",
+    desc: "Incorpora asistentes IA en tu sitio web o app para guiar al usuario mientras navega: resolver dudas, explicar pasos de compra, asistir en configuraciones o resolver bloqueos técnicos. Es como tener un experto digital al lado de cada cliente."
   }
 ];
 
 export default function UseCases() {
   return (
-    <section id="usecases" className="relative w-full min-h-screen py-36 px-6 bg-black text-white z-10">
+    <section id="usecases" className="snap-start h-screen w-full px-6 bg-black text-white z-10 flex items-center">
       <div className="max-w-6xl mx-auto text-center">
         <motion.h2
           className="text-4xl md:text-5xl font-extrabold mb-6 leading-tight tracking-tight"
@@ -36,13 +36,14 @@ export default function UseCases() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          Casos de uso concretos para{" "}
-          <span className="text-cyan-400">hacer crecer</span> tu empresa con IA
+          Casos reales donde la <span className="text-cyan-400">IA trabaja para ti</span>
         </motion.h2>
+
         <ShinyText
-          text="Descubre cómo puedes usar inteligencia artificial para responder preguntas, ayudar a tus clientes, formar a tu equipo o automatizar tareas con asistentes hechos a medida, entrenados con tu propio contenido."
+          text="¿Qué pasaría si tuvieras un equipo digital que nunca duerme, siempre responde y entiende tu negocio al detalle? Aquí tienes 4 formas en las que ya estoy ayudando a empresas como la tuya a ahorrar tiempo, mejorar su atención y desbloquear su potencial con IA personalizada."
           className="text-lg text-white/70 max-w-3xl mx-auto mb-20"
         />
+
         <div className="grid md:grid-cols-2 gap-12 mt-10">
           {cases.map((item, index) => (
             <motion.div
