@@ -7,12 +7,15 @@ import { FaCheckCircle, FaSpinner } from 'react-icons/fa';
 
 export default function FinalCTA({ emailjsConfig }) {
   const formRef = useRef();
+  const formStartTime = useRef(Date.now()); // Para medir el tiempo entre carga y envío
+
   const [form, setForm] = useState({
     name: '',
     email: '',
     company: '',
     role: '',
-    message: ''
+    message: '',
+    website: '' // Honeypot
   });
 
   const [errors, setErrors] = useState({});
@@ -21,18 +24,35 @@ export default function FinalCTA({ emailjsConfig }) {
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
-    setErrors({ ...errors, [e.target.name]: '' }); // Limpiar error al escribir
+    setErrors({ ...errors, [e.target.name]: '' });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    // Honeypot check
+    if (form.website) {
+      console.warn('SPAM detectado. Formulario bloqueado.');
+      return;
+    }
+
+    // Tiempo mínimo antes de enviar
+    const timeElapsed = (Date.now() - formStartTime.current) / 1000;
+    if (timeElapsed < 5) {
+      console.warn('Formulario enviado demasiado rápido. Posible spam.');
+      return;
+    }
+
+    // Validaciones manuales
     const newErrors = {};
     if (!form.name) newErrors.name = 'Por favor, introduce tu nombre';
     if (!form.email) newErrors.email = 'Por favor, introduce tu email';
     if (!form.company) newErrors.company = 'Por favor, indica tu empresa o proyecto';
     if (!form.role) newErrors.role = 'Por favor, indica tu cargo';
     if (!form.message) newErrors.message = 'Por favor, escribe tu mensaje';
+    if (form.message && form.message.length < 20) {
+      newErrors.message = 'Por favor, describe mejor tu necesidad (mínimo 20 caracteres)';
+    }
 
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors);
@@ -60,12 +80,13 @@ export default function FinalCTA({ emailjsConfig }) {
       console.log("Resultado OK:", result.text);
       setIsSending(false);
       setTimeout(() => setShowPopup(false), 3000);
-      setForm({ name: '', email: '', company: '', role: '', message: '' });
+      setForm({ name: '', email: '', company: '', role: '', message: '', website: '' });
+      formStartTime.current = Date.now(); // Resetea el contador
     }, (error) => {
       console.error("Error en envío:", error);
       setIsSending(false);
       setShowPopup(false);
-    });    
+    });
   };
 
   return (
@@ -93,6 +114,20 @@ export default function FinalCTA({ emailjsConfig }) {
           noValidate
           className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left bg-[#0f0f0f] p-8 rounded-3xl border border-white/10 shadow-[0_0_60px_rgba(0,255,255,0.05)] w-full"
         >
+          {/* Honeypot */}
+          <div className="hidden">
+            <label htmlFor="website">No rellenar este campo</label>
+            <input
+              type="text"
+              name="website"
+              value={form.website}
+              onChange={handleChange}
+              autoComplete="off"
+              tabIndex="-1"
+            />
+          </div>
+
+          {/* Inputs principales */}
           {[
             { label: 'Nombre', name: 'name', type: 'text' },
             { label: 'Email de contacto', name: 'email', type: 'email' },
