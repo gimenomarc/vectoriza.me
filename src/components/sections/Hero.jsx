@@ -42,7 +42,7 @@ export default function Hero() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
         >
-          Automatizo tareas, mejoro la eficiencia de tu equipo y adapto tu negocio a la era de la IA. Todo con soluciones prácticas, seguras y sin necesidad de programar.
+          Automatizo procesos, mejoro la eficiencia de tu empresa y adapto tu negocio a la era de la inteligencia artificial. Soluciones prácticas de IA para empresas, seguras y sin necesidad de programar.
         </motion.p>
 
         <motion.p

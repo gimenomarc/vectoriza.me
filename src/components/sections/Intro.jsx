@@ -24,7 +24,7 @@ export default function Intro() {
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.5 }}
         >
-          Transforma tu conocimiento en <span className="text-cyan-400 font-semibold">IA consultable</span> en tiempo real. Rápido. Preciso. Sin código.
+          Transforma el conocimiento de tu empresa en soluciones de inteligencia artificial consultables en tiempo real. Rápido. Preciso. Sin necesidad de programar.
         </motion.p>
       </div>
 

@@ -36,7 +36,7 @@ export default function UseCases() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          Casos reales donde la <span className="text-cyan-400">IA trabaja para ti</span>
+          Aplicaciones reales de inteligencia artificial <span className="text-cyan-400">para empresas</span>
         </motion.h2>
 
         <ShinyText

@@ -41,7 +41,7 @@ export default function HowItWorks() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            ¿Cómo trabajamos <span className="text-cyan-400">juntos</span>?
+            ¿Cómo implementamos soluciones de inteligencia artificial <span className="text-cyan-400">en tu empresa?</span>?
           </motion.h1>
           <motion.p
             className="text-base text-white/70 max-w-xl mx-auto"

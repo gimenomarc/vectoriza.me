@@ -15,8 +15,8 @@ export default function Benefits() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            De lo complicado a lo inteligente: <br />
-            <span className="text-cyan-400">Así evoluciona tu empresa</span>
+            De procesos complicados a eficiencia inteligente: <br />
+            <span className="text-cyan-400">Cómo la IA transforma tu empresa</span>
           </motion.h2>
 
           <motion.p
