@@ -10,13 +10,21 @@ export default function Intro() {
       {/* Contenido centrado */}
       <div className="relative z-10 text-center max-w-2xl">
         <motion.h1
-          className="text-4xl md:text-6xl font-extrabold tracking-tight text-white hover:text-cyan-400 transition cursor-pointer"
+          className="text-4xl md:text-6xl font-extrabold tracking-tight text-white transition cursor-pointer select-none"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
         >
-          vectoriza.<span className="text-cyan-400">me</span>
+          <span className="hover:text-cyan-400 transition duration-300">
+            vectoriza
+          </span>
+          .<span className="text-cyan-400">me</span>
+
+          <span className="block mt-4 text-white/50 text-xs md:text-sm font-semibold tracking-widest uppercase">
+            IA personalizada para tu empresa
+          </span>
         </motion.h1>
+
 
         <motion.p
           className="text-white/70 text-lg md:text-xl mt-6 px-4"
