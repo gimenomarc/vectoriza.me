@@ -5,7 +5,7 @@ export default function Intro() {
   return (
     <section id="intro" className="snap-start h-screen w-full overflow-hidden flex items-center justify-center bg-black relative px-6">
       {/* Fondo animado */}
-      <Hyperspeed />
+      <Hyperspeed className="pointer-events-none" />
 
       {/* Contenido centrado */}
       <div className="relative z-10 text-center max-w-2xl">

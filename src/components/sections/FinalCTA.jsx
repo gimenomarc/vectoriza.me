@@ -99,7 +99,7 @@ export default function FinalCTA({ emailjsConfig }) {
           transition={{ duration: 0.6 }}
         >
           <GradientText>
-            Empieza a trabajar con IA
+          Lleva tu empresa al siguiente nivel con IA personalizada
           </GradientText>
         </motion.h2>
 
