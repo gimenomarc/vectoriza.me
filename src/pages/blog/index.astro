@@ -1,0 +1,56 @@
+---
+import DefaultLayout from "../../layouts/DefaultLayout.astro";
+import "../../styles/global.css";
+
+const posts = [
+  {
+    title: "Cómo ahorrar 20 horas semanales automatizando procesos con IA",
+    slug: "como-automatizar-procesos-con-ia",
+    summary: "Descubre cómo aplicar IA práctica en tu empresa para eliminar tareas repetitivas y aumentar la productividad desde el primer día.",
+    date: "2025-04-26",
+    comingSoon: false,
+  },
+  {
+    title: "¿Qué es un RAG? Guía completa sobre Retrieval-Augmented Generation",
+    slug: "que-es-un-rag",
+    summary: "Aprende qué es un sistema RAG, cómo funciona y por qué está revolucionando el mundo de la inteligencia artificial aplicada a empresas.",
+    date: "2025-04-27",
+    comingSoon: false,
+  },
+  {
+    title: "7 Buenas prácticas para diseñar un sistema RAG de alto rendimiento",
+    slug: "buenas-practicas-rag",
+    summary: "Optimiza tu sistema de recuperación aumentada con multi-query, reranking, control de alucinaciones y más técnicas esenciales.",
+    date: "2025-04-28",
+    comingSoon: false,
+  }
+];
+---
+
+<DefaultLayout>
+  <section class="w-full pt-36 px-6 pb-20 max-w-5xl mx-auto text-white">
+    <h1 class="text-3xl md:text-5xl font-extrabold mb-10 text-center text-cyan-400">
+      Blog de Vectoriza.me 🚀
+    </h1>
+
+    <p class="text-white/70 text-base md:text-lg mb-16 text-center max-w-2xl mx-auto">
+      Consejos, casos reales y estrategias para transformar tu empresa con IA. Automatización, productividad y soluciones reales que impulsan tu negocio.
+    </p>
+
+    <div class="grid md:grid-cols-2 gap-10">
+      {posts.map((post) => (
+        <article class="group bg-[#0f0f0f] border border-white/10 rounded-3xl p-6 md:p-8 transition-all hover:scale-[1.03] hover:border-cyan-500/40 hover:shadow-[0_0_25px_rgba(0,255,255,0.3)]">
+          <h2 class="text-xl md:text-2xl font-bold text-cyan-400 mb-3 group-hover:text-cyan-300 transition">
+            <a href={`/blog/${post.slug}`} class="hover:underline">{post.title}</a>
+          </h2>
+          <p class="text-white/50 text-xs mb-2">{post.date}</p>
+          <p class="text-white/70 text-sm mb-6">{post.summary}</p>
+
+          <a href={`/blog/${post.slug}`} class="inline-block text-cyan-400 hover:text-cyan-300 font-semibold text-sm transition">
+            Leer más →
+          </a>
+        </article>
+      ))}
+    </div>
+  </section>
+</DefaultLayout>

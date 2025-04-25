@@ -17,11 +17,12 @@ export default function Navbar() {
     { id: 'intro', label: 'Inicio' },
     { id: 'hero', label: 'Qué hago' },
     { id: 'features', label: 'Soluciones IA' },
-    { id: 'benefits', label: 'Antes y después' }, // ← aquí actualizado
-    { id: 'usecases', label: 'Casos de uso' },     // ← sigue presente, si quieres lo renombramos
+    { id: 'benefits', label: 'Antes y después' },
+    { id: 'usecases', label: 'Casos de uso' },
     { id: 'howitworks', label: 'Cómo trabajamos' },
-    { id: 'finalcta', label: 'Contacto' }
-  ];  
+    { id: 'finalcta', label: 'Contacto' },
+    { href: '/blog', label: 'Blog', external: true }
+  ];
 
   return (
     <motion.nav
@@ -31,23 +32,33 @@ export default function Navbar() {
       transition={{ duration: 0.5 }}
     >
       <a
-        href="#"
-        onClick={() => scrollTo('intro')}
+        href="/"
         className="text-xl md:text-2xl font-extrabold tracking-tight text-white hover:text-cyan-400 transition cursor-pointer"
       >
         vectoriza.<span className="text-cyan-400">me</span>
       </a>
 
+
       {/* Desktop Navigation */}
       <div className="hidden md:flex space-x-6 text-sm font-medium">
         {links.map((link) => (
-          <button
-            key={link.id}
-            onClick={() => scrollTo(link.id)}
-            className="text-white/80 hover:text-cyan-400 transition duration-300 cursor-pointer"
-          >
-            {link.label}
-          </button>
+          link.external ? (
+            <a
+              key={link.label}
+              href={link.href}
+              className="text-white/80 hover:text-cyan-400 transition duration-300 cursor-pointer"
+            >
+              {link.label}
+            </a>
+          ) : (
+            <button
+              key={link.id}
+              onClick={() => scrollTo(link.id)}
+              className="text-white/80 hover:text-cyan-400 transition duration-300 cursor-pointer"
+            >
+              {link.label}
+            </button>
+          )
         ))}
       </div>
 
@@ -80,13 +91,24 @@ export default function Navbar() {
             transition={{ duration: 0.3 }}
           >
             {links.map((link) => (
-              <button
-                key={link.id}
-                onClick={() => scrollTo(link.id)}
-                className="text-white/80 hover:text-cyan-400 transition text-left cursor-pointer"
-              >
-                {link.label}
-              </button>
+              link.external ? (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  className="text-white/80 hover:text-cyan-400 transition text-left cursor-pointer"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {link.label}
+                </a>
+              ) : (
+                <button
+                  key={link.id}
+                  onClick={() => scrollTo(link.id)}
+                  className="text-white/80 hover:text-cyan-400 transition text-left cursor-pointer"
+                >
+                  {link.label}
+                </button>
+              )
             ))}
 
             <button
