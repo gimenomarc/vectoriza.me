@@ -6,11 +6,15 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const scrollTo = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      setIsOpen(false);
+    if (window.location.pathname !== '/') {
+      window.location.href = `/#${id}`;
+    } else {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
     }
+    setIsOpen(false);
   };
 
   const links = [
@@ -37,7 +41,6 @@ export default function Navbar() {
       >
         vectoriza.<span className="text-cyan-400">me</span>
       </a>
-
 
       {/* Desktop Navigation */}
       <div className="hidden md:flex space-x-6 text-sm font-medium">
