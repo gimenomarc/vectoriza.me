@@ -20,9 +20,10 @@ export default function Intro() {
           </span>
           .<span className="text-cyan-400">me</span>
 
-          <span className="block mt-4 text-white/50 text-xs md:text-sm font-semibold tracking-widest uppercase">
+          <span className="block mt-4 text-white/50 text-sm md:text-base font-semibold tracking-wide uppercase">
             IA personalizada para tu empresa
           </span>
+
         </motion.h1>
 
 
