@@ -65,13 +65,24 @@ export default function Navbar() {
         ))}
       </div>
 
-      {/* CTA Button Desktop */}
-      <button
-        onClick={() => scrollTo('finalcta')}
-        className="ml-4 hidden md:inline-block px-5 py-2 bg-cyan-500 hover:bg-cyan-600 transition-all text-black font-semibold rounded-full shadow-[0_0_20px_rgba(0,255,255,0.2)] cursor-pointer hover:shadow-[0_0_30px_rgba(0,255,255,0.3)]"
-      >
-        Empezar ahora
-      </button>
+      {/* Botones CTA */}
+      <div className="hidden md:flex items-center space-x-4 ml-4">
+        {/* Botón Proyectos */}
+        <a
+          href="/projects"
+          className="px-5 py-2 text-white text-sm font-semibold rounded-full border-2 border-cyan-500 bg-transparent hover:bg-cyan-500/10 transition-all duration-300 cursor-pointer"
+        >
+          Proyectos
+        </a>
+
+        {/* Botón Empezar ahora */}
+        <button
+          onClick={() => scrollTo('finalcta')}
+          className="px-5 py-2 text-black text-sm font-semibold rounded-full bg-cyan-500 hover:bg-cyan-600 transition-all duration-300 cursor-pointer"
+        >
+          Empezar ahora
+        </button>
+      </div>
 
       {/* Mobile Menu Toggle */}
       <div className="md:hidden">
@@ -114,9 +125,19 @@ export default function Navbar() {
               )
             ))}
 
+            {/* Botón Proyectos en menú móvil */}
+            <a
+              href="/projects"
+              className="mt-4 px-5 py-2 text-white text-center rounded-full border-2 border-cyan-500 bg-transparent hover:bg-cyan-500/10 transition-all duration-300 cursor-pointer"
+              onClick={() => setIsOpen(false)}
+            >
+              Proyectos
+            </a>
+
+            {/* Botón Empezar ahora en menú móvil */}
             <button
               onClick={() => scrollTo('finalcta')}
-              className="mt-4 bg-cyan-500 hover:bg-cyan-600 text-black font-semibold px-5 py-2 rounded-full shadow-[0_0_20px_rgba(0,255,255,0.2)] cursor-pointer hover:shadow-[0_0_30px_rgba(0,255,255,0.3)]"
+              className="mt-4 bg-cyan-500 hover:bg-cyan-600 text-black font-semibold px-5 py-2 rounded-full transition-all duration-300 cursor-pointer"
             >
               Empezar ahora
             </button>

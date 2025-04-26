@@ -1,0 +1,44 @@
+---
+import DefaultLayout from "../../layouts/DefaultLayout.astro";
+import "../../styles/global.css";
+
+const projects = [
+  {
+    title: "TransmorphAI",
+    slug: "transmorphai",
+    description: "AI-powered system for automatic data transformation in API integrations.",
+  },
+  {
+    title: "Internal FAQ Assistant",
+    slug: "internal-faq-assistant",
+    description: "Custom chatbot trained with company documentation to automate internal support.",
+  },
+];
+---
+
+<DefaultLayout>
+  <section class="w-full pt-36 px-6 pb-20 max-w-5xl mx-auto text-white">
+    <h1 class="text-3xl md:text-5xl font-extrabold mb-10 text-center text-cyan-400">
+      AI Projects 🚀
+    </h1>
+
+    <p class="text-white/70 text-base md:text-lg mb-16 text-center max-w-2xl mx-auto">
+      Explore the AI-powered solutions I've built to optimize business processes, automate tasks, and unlock real productivity.
+    </p>
+
+    <div class="grid md:grid-cols-2 gap-10">
+      {projects.map((project) => (
+        <article class="group bg-[#0f0f0f] border border-white/10 rounded-3xl p-6 md:p-8 transition-all hover:scale-[1.03] hover:border-cyan-500/40 hover:shadow-[0_0_25px_rgba(0,255,255,0.3)]">
+          <h2 class="text-xl md:text-2xl font-bold text-cyan-400 mb-3 group-hover:text-cyan-300 transition">
+            {project.title}
+          </h2>
+          <p class="text-white/70 text-sm mb-6">{project.description}</p>
+
+          <a href={`/projects/${project.slug}`} class="inline-block text-cyan-400 hover:text-cyan-300 font-semibold text-sm transition">
+            View project →
+          </a>
+        </article>
+      ))}
+    </div>
+  </section>
+</DefaultLayout>
