@@ -8,6 +8,7 @@ import Features from '../components/sections/Features.jsx';
 import HowItWorks from '../components/sections/HowItWorks.jsx';
 import UseCases from '../components/sections/UseCases.jsx';
 import Benefits from '../components/sections/Benefits.jsx';
+import About from '../components/sections/About.jsx';
 import FinalCTA from '../components/sections/FinalCTA.jsx';
 import { emailjsConfig } from '../emailjsConfig';
 import "../styles/global.css";
@@ -21,9 +22,10 @@ import "../styles/global.css";
     <section class="snap-start min-h-screen"><Intro client:only="react" /></section>
     <section class="snap-start min-h-screen"><Hero client:visible /></section>
     <section class="snap-start min-h-screen"><Features client:visible /></section>
-    <section class="snap-start min-h-screen"><Benefits client:visible /></section>
     <section class="snap-start min-h-screen"><UseCases client:visible /></section>
+    <section class="snap-start min-h-screen"><Benefits client:visible /></section>
     <section class="snap-start min-h-screen"><HowItWorks client:visible /></section>
+    <section class="snap-start min-h-screen"><About client:visible /></section>
     <FinalCTA emailjsConfig={emailjsConfig} client:visible />
   </main>
 </Layout>

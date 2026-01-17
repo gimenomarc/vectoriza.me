@@ -12,7 +12,7 @@ export default function Hero() {
     >
       {/* Decoración flotante circular */}
       <ScrollFloat className="absolute top-10 left-10 scale-75 md:scale-100 z-20">
-        <CircularText text="VECTORIZA.ME*AI*KNOWLEDGE*" spinDuration={18} onHover="speedUp" />
+        <CircularText text="VECTORIZA.ME*IA*COMPLETA*RAG*AGENTES*" spinDuration={18} onHover="speedUp" />
       </ScrollFloat>
 
       {/* Fondo visual limpio */}
@@ -32,7 +32,7 @@ export default function Hero() {
           transition={{ delay: 0.3 }}
         >
           <GradientText>
-            Moderniza tu empresa con inteligencia artificial
+            Experto en IA: Transformo tu negocio con inteligencia artificial integral
           </GradientText>
         </motion.h1>
 
@@ -42,7 +42,7 @@ export default function Hero() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
         >
-          Automatizo procesos, mejoro la eficiencia de tu empresa y adapto tu negocio a la era de la inteligencia artificial. Soluciones prácticas de IA para empresas, seguras y sin necesidad de programar.
+          No solo hago agentes o webs: domino <strong className="text-cyan-300">la IA en todos sus niveles</strong>. Desde <strong className="text-cyan-300">agentes autónomos y RAGs</strong> hasta <strong className="text-cyan-300">Insta Web</strong> (webs personalizadas ultra-rápidas), <strong className="text-cyan-300">videos publicitarios con IA</strong>, <strong className="text-cyan-300">imágenes perfectas</strong>, <strong className="text-cyan-300">formaciones empresariales</strong>, <strong className="text-cyan-300">cultura y gobierno IA</strong>, <strong className="text-cyan-300">IA Responsable</strong> y <strong className="text-cyan-300">cumplimiento IA ACT</strong>. Todo lo que necesitas para liderar con IA.
         </motion.p>
 
         <motion.p
@@ -51,7 +51,7 @@ export default function Hero() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6 }}
         >
-          Soy <strong className="text-cyan-300">Marc Gimeno</strong>, especialista en inteligencia artificial aplicada. Trabajo con empresas que quieren avanzar, ahorrar tiempo y multiplicar su productividad gracias a la IA. Tú pones el conocimiento, yo lo transformo en soluciones reales.
+          Soy <strong className="text-cyan-300">Marc Gimeno</strong>, experto en inteligencia artificial integral. No me limito a una tecnología: implemento soluciones completas que transforman empresas. Agentes que trabajan solos, RAGs que responden con precisión, flujos agénticos que automatizan operaciones, Insta Web para presencia digital instantánea, contenido multimedia con IA, y toda la estrategia organizacional para que tu empresa domine la IA de forma responsable y efectiva.
         </motion.p>
 
         <motion.div
@@ -64,7 +64,7 @@ export default function Hero() {
             href="#finalcta"
             className="relative px-6 py-3 text-white text-base font-semibold rounded-full border-2 border-cyan-500 bg-black hover:bg-cyan-500/10 transition-all duration-300 shadow-[0_0_20px_rgba(0,255,255,0.15)] cursor-pointer"
           >
-            Quiero una propuesta personalizada
+            Solicitar propuesta (24-48h)
           </a>
         </motion.div>
       </motion.div>

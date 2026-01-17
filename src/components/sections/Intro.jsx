@@ -21,20 +21,44 @@ export default function Intro() {
           .<span className="text-cyan-400">me</span>
 
           <span className="block mt-4 text-white/50 text-sm md:text-base font-semibold tracking-wide uppercase">
-            IA personalizada para tu empresa
+            Multiplica tu eficiencia con IA
           </span>
 
         </motion.h1>
 
 
         <motion.p
-          className="text-white/70 text-lg md:text-xl mt-6 px-4"
+          className="text-white/90 text-2xl md:text-3xl mt-8 px-4 font-bold leading-tight"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.5 }}
         >
-          Transforma el conocimiento de tu empresa en soluciones de inteligencia artificial consultables en tiempo real. Rápido. Preciso. Sin necesidad de programar.
+          Automatiza lo que te quita horas.<br />
+          <span className="text-cyan-400">Potencia lo que genera valor.</span>
         </motion.p>
+        
+        <motion.p
+          className="text-white/70 text-lg md:text-xl mt-6 px-4 max-w-2xl mx-auto leading-relaxed"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.7 }}
+        >
+          Agentes de IA que trabajan 24/7. Sistemas que reducen costes hasta un 80%. Automatización que libera a tu equipo para lo estratégico. <span className="text-cyan-300 font-semibold">Resultados medibles desde la primera semana.</span>
+        </motion.p>
+        
+        <motion.div
+          className="mt-8"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.9 }}
+        >
+          <a
+            href="#finalcta"
+            className="inline-block px-8 py-4 bg-cyan-500 hover:bg-cyan-600 text-black font-bold text-lg rounded-full transition-all duration-300 shadow-[0_0_30px_rgba(0,255,255,0.3)] hover:shadow-[0_0_50px_rgba(0,255,255,0.5)]"
+          >
+            Quiero ver resultados
+          </a>
+        </motion.div>
       </div>
 
       {/* Gradiente inferior */}

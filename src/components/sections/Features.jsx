@@ -1,38 +1,68 @@
 import GradientText from '../reactbits/GradientText';
 import ShinyText from '../reactbits/ShinyText';
-import { FaFileUpload, FaBrain, FaBolt, FaComments, FaSyncAlt, FaCode } from 'react-icons/fa';
+import { FaBrain, FaCode, FaBolt, FaComments, FaSyncAlt, FaFileUpload, FaVideo, FaImage, FaGraduationCap, FaUsers, FaShieldAlt, FaBalanceScale, FaRocket } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
 const features = [
   {
-    icon: <FaFileUpload />,
-    title: 'Trabajo con tu contenido real',
-    desc: 'Puedo utilizar tus documentos, procesos internos, manuales o bases de datos para crear soluciones de IA que respondan dudas, guíen tareas o automaticen pasos repetitivos.'
+    icon: <FaBrain />,
+    title: 'Agentes de IA autónomos',
+    desc: 'Creo agentes inteligentes que trabajan 24/7, toman decisiones autónomas, ejecutan tareas complejas y aprenden de tus procesos. No son chatbots simples: son sistemas autónomos que transforman operaciones completas.'
   },
   {
-    icon: <FaBrain />,
-    title: 'IA que entiende tu negocio',
-    desc: 'Desarrollo sistemas que no repiten lo que encuentran: comprenden tu lenguaje, tu lógica y tus reglas. Están entrenados con lo que hace única a tu empresa.'
+    icon: <FaRocket />,
+    title: 'Sistemas RAG (Retrieval-Augmented Generation)',
+    desc: 'Implemento RAGs que combinan modelos generativos con tus documentos, bases de datos y conocimiento interno. Respuestas precisas, sin alucinaciones, basadas en información real y actualizada de tu empresa.'
   },
   {
     icon: <FaBolt />,
-    title: 'Automatización que ahorra tiempo',
-    desc: 'Reduzco tareas manuales y tiempos de respuesta. Ganas productividad real al automatizar procesos con precisión y sin esfuerzo.'
-  },
-  {
-    icon: <FaComments />,
-    title: 'Respuestas claras a preguntas reales',
-    desc: 'Desde información técnica hasta preguntas frecuentes. La IA responde con lógica, contexto y el estilo que necesite tu empresa.'
-  },
-  {
-    icon: <FaSyncAlt />,
-    title: 'Actualización constante y sin fricción',
-    desc: 'Si cambias tus contenidos o procesos, la IA se adapta. Puedo actualizarla en cualquier momento para que evolucione contigo.'
+    title: 'Flujos agénticos complejos',
+    desc: 'Diseño flujos donde múltiples agentes colaboran, coordinan sistemas, ejecutan workflows completos y toman decisiones en cadena. Automatización de procesos end-to-end sin intervención humana.'
   },
   {
     icon: <FaCode />,
-    title: 'Sin que tú programes nada',
-    desc: 'Tú solo defines qué necesitas. Yo me encargo del diseño, desarrollo e implementación. Todo funciona sin que tengas que escribir una línea de código.'
+    title: 'Insta Web: Webs personalizadas ultra-rápidas',
+    desc: 'Desarrollo sitios web completamente personalizados usando IA: diseño único y profesional, contenido generado inteligentemente, optimización SEO automática, integración de agentes conversacionales. Webs perfectas, listas en tiempo récord.'
+  },
+  {
+    icon: <FaVideo />,
+    title: 'Videos publicitarios con IA',
+    desc: 'Creo videos promocionales, explicativos y publicitarios usando inteligencia artificial: generación de guiones, voces sintéticas, animaciones, edición automática. Contenido profesional que vende, creado con IA.'
+  },
+  {
+    icon: <FaImage />,
+    title: 'Imágenes perfectas con IA',
+    desc: 'Genero imágenes profesionales para marketing, productos, presentaciones y contenido visual usando IA avanzada. Logos, ilustraciones, fotos de producto, gráficos personalizados. Calidad profesional, resultados inmediatos.'
+  },
+  {
+    icon: <FaGraduationCap />,
+    title: 'Formaciones de implementación de IA',
+    desc: 'Capacito a tu equipo en implementación práctica de IA: desde conceptos hasta desarrollo real. Formaciones personalizadas, hands-on, para que tu empresa domine la IA internamente.'
+  },
+  {
+    icon: <FaUsers />,
+    title: 'Cultura IA organizacional',
+    desc: 'Ayudo a construir cultura IA en tu empresa: cambio organizacional, adopción de herramientas, mentalidad data-driven, equipos preparados para la era de la IA. Transformación cultural completa.'
+  },
+  {
+    icon: <FaShieldAlt />,
+    title: 'Gobierno IA y IA Responsable',
+    desc: 'Implemento frameworks de gobierno IA: políticas, ética, transparencia, auditorías, control de sesgos, privacidad. Tu empresa usa IA de forma responsable, ética y cumpliendo regulaciones.'
+  },
+  {
+    icon: <FaBalanceScale />,
+    title: 'Cumplimiento IA ACT (UE)',
+    desc: 'Te ayudo a cumplir con el Artificial Intelligence Act europeo: clasificación de sistemas, evaluación de riesgos, documentación, transparencia, supervisión humana. Implementación completa y certificación.'
+  },
+  {
+    icon: <FaSyncAlt />,
+    title: 'Integraciones y automatización completa',
+    desc: 'Conecto todo: agentes con CRMs, RAGs con bases de datos, flujos con APIs, sistemas legacy con IA moderna. Integración completa sin cambiar tu infraestructura existente.'
+  },
+  {
+    icon: <FaComments />,
+    title: 'Consultoría estratégica IA',
+    desc: 'Estrategia completa de IA para tu empresa: diagnóstico, roadmap, arquitectura, selección de tecnologías, ROI, métricas. Te guío desde la idea hasta la implementación exitosa.'
   }
 ];
 
@@ -42,20 +72,20 @@ export default function Features() {
       <div className="max-w-6xl mx-auto flex flex-col items-center text-center gap-16">
         <div>
           <p className="text-sm uppercase tracking-widest text-cyan-500 mb-2 font-mono">
-            Lo que puedo hacer por tu empresa
+            Servicios completos de IA
           </p>
 
           <h2 className="text-3xl md:text-5xl font-extrabold leading-tight max-w-4xl mx-auto">
-          Soluciones de Inteligencia Artificial
-          <span className="text-cyan-400"> Personalizadas para Empresas</span>
+          Todo lo que necesitas para dominar
+          <span className="text-cyan-400"> la Inteligencia Artificial</span>
           </h2>
 
           <p className="text-base md:text-lg text-white/70 max-w-2xl mx-auto mt-4">
-            Diseño e implemento sistemas de inteligencia artificial adaptados a tu contenido, tu sector y tus objetivos. Automatiza procesos, resuelve dudas y mejora el rendimiento de tu equipo sin depender de desarrolladores.
+            No me limito a una tecnología: ofrezco soluciones integrales de IA. Desde implementación técnica (agentes, RAGs, flujos) hasta contenido multimedia, formaciones, cultura organizacional, gobierno IA y cumplimiento normativo. Todo en un solo lugar.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map(({ icon, title, desc }, idx) => (
             <motion.div
               key={idx}

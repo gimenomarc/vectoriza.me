@@ -19,11 +19,12 @@ export default function Navbar() {
 
   const links = [
     { id: 'intro', label: 'Inicio' },
-    { id: 'hero', label: 'Qué hago' },
-    { id: 'features', label: 'Soluciones IA' },
-    { id: 'benefits', label: 'Antes y después' },
-    { id: 'usecases', label: 'Casos de uso' },
-    { id: 'howitworks', label: 'Cómo trabajamos' },
+    { id: 'hero', label: 'Servicios' },
+    { id: 'features', label: 'Agentes & Web' },
+    { id: 'usecases', label: 'Casos reales' },
+    { id: 'benefits', label: 'Impacto' },
+    { id: 'howitworks', label: 'Proceso' },
+    { id: 'about', label: 'Sobre mí' },
     { id: 'finalcta', label: 'Contacto' },
     { href: '/blog', label: 'Blog', external: true }
   ];

@@ -1,4 +1,4 @@
-import { FaComments, FaUsersCog, FaChartLine, FaMobileAlt } from "react-icons/fa";
+import { FaComments, FaUsersCog, FaChartLine, FaMobileAlt, FaDatabase, FaVideo, FaImage, FaGraduationCap, FaShieldAlt, FaBolt, FaBalanceScale } from "react-icons/fa";
 import { motion } from "framer-motion";
 import GradientText from "../reactbits/GradientText";
 import ShinyText from "../reactbits/ShinyText";
@@ -6,23 +6,43 @@ import ShinyText from "../reactbits/ShinyText";
 const cases = [
   {
     icon: <FaComments size={24} />,
-    title: "Atiende sin límites, las 24h",
-    desc: "Chatbots inteligentes que responden al instante, resuelven preguntas frecuentes, gestionan incidencias y solo escalan lo realmente urgente. Funciona día y noche, sin colapsar a tu equipo humano. Perfecto para ecommerce, servicios o cualquier empresa con alta demanda."
+    title: "RAG + Agente: Soporte técnico inteligente",
+    desc: "Sistema RAG que consulta documentación técnica, manuales y bases de conocimiento, combinado con agente que resuelve problemas complejos. Respuestas precisas basadas en información real, sin errores. Reducción del 80% en tickets repetitivos."
   },
   {
-    icon: <FaUsersCog size={24} />,
-    title: "Tu equipo, más autónomo",
-    desc: "¿Cuántas veces alguien hace la misma pregunta? Crea un asistente interno que explique procesos, herramientas, políticas y más. Ideal para el onboarding de nuevas personas, resolver dudas frecuentes y liberar tiempo a RRHH y managers."
+    icon: <FaDatabase size={24} />,
+    title: "RAG empresarial: Tu conocimiento consultable",
+    desc: "Transformo tus documentos, procesos internos y bases de datos en un sistema RAG consultable. Tu equipo pregunta en lenguaje natural y obtiene respuestas precisas de toda la información de la empresa. Onboarding instantáneo, decisiones informadas."
   },
   {
-    icon: <FaChartLine size={24} />,
-    title: "Haz preguntas a tus datos (¡como si hablaras con alguien!)",
-    desc: "Transforma tus hojas de cálculo y reportes en un sistema accesible por lenguaje natural. Pregunta '¿cómo fueron las ventas el último trimestre?' y obtén la respuesta al momento, sin buscar entre archivos ni depender de nadie."
+    icon: <FaBolt size={24} />,
+    title: "Flujo agéntico: Automatización end-to-end",
+    desc: "Flujo donde múltiples agentes colaboran: uno recibe pedidos, otro verifica inventario, otro gestiona pagos, otro coordina envíos. Proceso completo automatizado sin intervención humana. De días a minutos."
   },
   {
-    icon: <FaMobileAlt size={24} />,
-    title: "Guía a tus usuarios en vivo",
-    desc: "Incorpora asistentes IA en tu sitio web o app para guiar al usuario mientras navega: resolver dudas, explicar pasos de compra, asistir en configuraciones o resolver bloqueos técnicos. Es como tener un experto digital al lado de cada cliente."
+    icon: <FaVideo size={24} />,
+    title: "Videos publicitarios con IA: Marketing escalable",
+    desc: "Genero videos promocionales completos con IA: guiones optimizados, voces sintéticas personalizadas, animaciones, edición automática. Campañas de video profesionales creadas en horas, no semanas. Costos reducidos en un 90%."
+  },
+  {
+    icon: <FaImage size={24} />,
+    title: "Imágenes IA: Contenido visual ilimitado",
+    desc: "Genero imágenes profesionales para catálogos, redes sociales, presentaciones: productos, ilustraciones, gráficos personalizados. Sin sesiones fotográficas costosas, sin esperar diseñadores. Contenido visual de calidad profesional al instante."
+  },
+  {
+    icon: <FaGraduationCap size={24} />,
+    title: "Formación IA: Tu equipo como expertos",
+    desc: "Capacito a tu equipo en implementación práctica de IA: desde conceptos hasta desarrollo real de agentes y RAGs. Formaciones hands-on, personalizadas a tu sector. Tu empresa domina la IA internamente, sin depender de externos."
+  },
+  {
+    icon: <FaShieldAlt size={24} />,
+    title: "Gobierno IA + IA Responsable: Implementación ética",
+    desc: "Implemento frameworks completos de gobierno IA: políticas éticas, control de sesgos, transparencia, auditorías, privacidad. Tu empresa usa IA de forma responsable, cumpliendo regulaciones y ganando confianza de clientes y stakeholders."
+  },
+  {
+    icon: <FaBalanceScale size={24} />,
+    title: "Cumplimiento IA ACT: Listo para Europa",
+    desc: "Te preparo para el Artificial Intelligence Act: clasificación de sistemas de riesgo, documentación técnica, evaluación de conformidad, supervisión humana. Cumplimiento completo con la regulación europea de IA."
   }
 ];
 
@@ -36,11 +56,11 @@ export default function UseCases() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          Aplicaciones reales de inteligencia artificial <span className="text-cyan-400">para empresas</span>
+          Qué puedes solucionar con IA: <span className="text-cyan-400">Casos reales</span>
         </motion.h2>
 
         <ShinyText
-          text="¿Qué pasaría si tuvieras un equipo digital que nunca duerme, siempre responde y entiende tu negocio al detalle? Aquí tienes 4 formas en las que ya estoy ayudando a empresas como la tuya a ahorrar tiempo, mejorar su atención y desbloquear su potencial con IA personalizada."
+          text="La IA no es solo una tecnología: es la solución a problemas reales de negocio. Aquí tienes ejemplos concretos de cómo implemento IA para resolver desafíos empresariales. Desde automatización técnica hasta contenido multimedia, formaciones y cumplimiento normativo. Todo con resultados medibles."
           className="text-lg text-white/70 max-w-3xl mx-auto"
         />
 

@@ -5,18 +5,18 @@ import ShinyText from "../reactbits/ShinyText";
 const steps = [
   {
     icon: <FaUpload size={24} />,
-    title: "Escucho y analizo",
-    desc: "Conozco tu negocio, tus procesos, tus retos. Todo empieza por entender lo que realmente necesitas."
+    title: "1. Analizamos tu necesidad",
+    desc: "Llamada de 30 minutos para entender tu operación, identificar procesos automatizables y definir objetivos claros. Sin compromiso, solo para alinear expectativas."
   },
   {
     icon: <FaCogs size={24} />,
-    title: "Diseño y propongo",
-    desc: "Te presento una solución clara, práctica y 100% personalizada. Sin complicaciones técnicas."
+    title: "2. Propuesta en 24-48h",
+    desc: "Te envío una propuesta concreta: qué agente desarrollamos, qué soluciones implementamos, qué flujos automatizamos. Presupuesto claro, plazos reales, resultados medibles."
   },
   {
     icon: <FaComments size={24} />,
-    title: "Implementamos juntos",
-    desc: "Lo pongo en marcha contigo. Desde el día uno, funciona. Y te acompaño para que lo aproveches al máximo."
+    title: "3. Implementación rápida",
+    desc: "Agentes funcionando en días, Insta Web lista en tiempo récord, flujos operativos mejorados desde la primera semana. Resultados visibles desde el inicio, sin esperar meses."
   }
 ];
 
@@ -32,7 +32,7 @@ export default function HowItWorks() {
       <div className="max-w-6xl mx-auto flex flex-col items-center text-center gap-16">
         <div className="flex flex-col gap-4">
           <p className="text-sm uppercase tracking-widest text-cyan-500 font-mono">
-            Tu camino hacia la IA personalizada
+            Proceso rápido y directo
           </p>
 
           <motion.h1
@@ -41,7 +41,7 @@ export default function HowItWorks() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            ¿Cómo implementamos soluciones de inteligencia artificial <span className="text-cyan-400">en tu empresa?</span>?
+            ¿Cómo trabajamos? <span className="text-cyan-400">Simple y rápido</span>
           </motion.h1>
           <motion.p
             className="text-base text-white/70 max-w-xl mx-auto"
@@ -50,7 +50,7 @@ export default function HowItWorks() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2, duration: 0.6 }}
           >
-            Un proceso claro, rápido y efectivo. Creamos soluciones de inteligencia artificial adaptadas a tu empresa que funcionan desde el primer día y aumentan la eficiencia sin complicaciones técnicas.
+            Sin burocracias, sin reuniones interminables. Analizamos tu necesidad, te damos una propuesta clara en 24-48h y empezamos a implementar. Agentes funcionando en días, Insta Web lista rápidamente, resultados desde la primera semana.
           </motion.p>
         </div>
 
