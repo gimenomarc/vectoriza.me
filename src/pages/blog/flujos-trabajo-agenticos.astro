@@ -1,0 +1,530 @@
+---
+import DefaultLayout from "../../layouts/DefaultLayout.astro";
+import "../../styles/global.css";
+---
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Flujos de Trabajo Agénticos: IA que piensa antes de responder | Vectoriza.me</title>
+  <meta name="description" content="Agentic Workflows: La IA que planifica, reflexiona y corrige antes de entregar resultados. Flujos iterativos que resuelven tareas complejas de forma autónoma." />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Flujos de Trabajo Agénticos: IA que piensa antes de responder | Vectoriza.me" />
+  <meta property="og:description" content="Descubre cómo los agentic workflows están revolucionando la automatización: IA que planifica, ejecuta y mejora iterativamente." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://www.vectoriza.me/blog/flujos-trabajo-agenticos" />
+  <meta name="twitter:card" content="summary_large_image" />
+</head>
+
+<DefaultLayout>
+  <section class="w-full px-6 pt-40 pb-20 max-w-6xl mx-auto text-white">
+
+    <div class="text-center mb-12">
+      <span class="inline-block px-4 py-2 bg-cyan-400/20 text-cyan-400 rounded-full text-sm font-semibold mb-6">
+        Tendencias IA 2025-2026
+      </span>
+      <h1 class="text-4xl md:text-6xl font-extrabold mb-6 text-cyan-400">
+        Flujos de Trabajo Agénticos: IA que piensa antes de responder
+      </h1>
+      <p class="text-xl text-white/80 text-center max-w-4xl mx-auto mb-4">
+        A diferencia de un prompt de "un solo disparo", los <strong class="text-cyan-400">Agentic Workflows</strong> son flujos iterativos donde la IA <strong>planifica, reflexiona, detecta errores y corrige</strong> antes de entregarte el resultado final.
+      </p>
+      <p class="text-base text-white/60 max-w-3xl mx-auto">
+        ⏱️ Tiempo de lectura: 17 minutos | 🧠 Incluye arquitecturas, ejemplos prácticos y casos de uso reales
+      </p>
+    </div>
+
+    <!-- El problema del prompt único -->
+    <div class="bg-gradient-to-r from-red-900/20 to-orange-900/20 border-l-4 border-red-500 p-8 rounded-xl mb-16">
+      <h2 class="text-2xl font-bold text-red-400 mb-4">❌ El problema del prompt único</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-[#0a0a0a] p-6 rounded-lg">
+          <p class="text-red-400 font-semibold mb-3 text-lg">Prompt tradicional:</p>
+          <div class="bg-[#141414] p-4 rounded-lg font-mono text-xs text-red-300 mb-3">
+            <pre>{`"Analiza estos datos de ventas 
+y dame un reporte"`}</pre>
+          </div>
+          <ul class="text-white/70 text-sm space-y-2">
+            <li>• IA responde inmediatamente</li>
+            <li>• Sin planificación previa</li>
+            <li>• Sin verificación de calidad</li>
+            <li>• Resultado puede ser incompleto</li>
+            <li>• Tú debes revisar y pedir correcciones</li>
+          </ul>
+        </div>
+        <div class="bg-[#0a0a0a] p-6 rounded-lg">
+          <p class="text-green-400 font-semibold mb-3 text-lg">Agentic Workflow:</p>
+          <div class="bg-[#141414] p-4 rounded-lg font-mono text-xs text-green-300 mb-3">
+            <pre>{`1. Planifica análisis
+2. Extrae datos relevantes
+3. Analiza patrones
+4. Reflexiona sobre resultados
+5. Detecta inconsistencias
+6. Corrige y mejora
+7. Genera reporte final`}</pre>
+          </div>
+          <ul class="text-white/70 text-sm space-y-2">
+            <li>• IA planifica primero</li>
+            <li>• Ejecuta paso a paso</li>
+            <li>• Verifica calidad en cada etapa</li>
+            <li>• Corrige errores automáticamente</li>
+            <li>• Resultado completo y validado</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Qué son Agentic Workflows -->
+    <div class="mb-20">
+      <h2 class="text-3xl md:text-4xl font-bold text-cyan-400 mb-8 text-center">
+        🧠 ¿Qué son los Agentic Workflows?
+      </h2>
+      
+      <div class="bg-gradient-to-br from-cyan-900/20 to-blue-900/20 border border-cyan-400/30 p-8 rounded-2xl mb-8">
+        <p class="text-white/80 text-lg mb-6">
+          Popularizados por <strong class="text-cyan-400">Andrew Ng</strong>, los Agentic Workflows son sistemas donde la IA no solo ejecuta, sino que <strong>piensa estratégicamente</strong> antes de actuar.
+        </p>
+        
+        <div class="grid md:grid-cols-3 gap-6 mb-8">
+          <div class="bg-[#0a0a0a] p-6 rounded-xl">
+            <div class="text-4xl mb-4 text-center">📋</div>
+            <h3 class="text-lg font-bold text-cyan-400 mb-3 text-center">1. Planificación</h3>
+            <p class="text-white/70 text-sm">
+              La IA primero analiza el problema y crea un plan de acción detallado antes de ejecutar cualquier tarea.
+            </p>
+          </div>
+          
+          <div class="bg-[#0a0a0a] p-6 rounded-xl">
+            <div class="text-4xl mb-4 text-center">🔄</div>
+            <h3 class="text-lg font-bold text-cyan-400 mb-3 text-center">2. Reflexión</h3>
+            <p class="text-white/70 text-sm">
+              Después de cada paso, la IA evalúa si el resultado es correcto y si el plan necesita ajustes.
+            </p>
+          </div>
+          
+          <div class="bg-[#0a0a0a] p-6 rounded-xl">
+            <div class="text-4xl mb-4 text-center">✅</div>
+            <h3 class="text-lg font-bold text-cyan-400 mb-3 text-center">3. Auto-corrección</h3>
+            <p class="text-white/70 text-sm">
+              Si detecta errores o inconsistencias, la IA corrige automáticamente sin necesidad de intervención humana.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-[#0a0a0a] p-6 rounded-xl">
+          <h3 class="text-xl font-bold text-cyan-300 mb-4">Ejemplo de flujo agéntico:</h3>
+          <div class="bg-[#141414] p-4 rounded-lg font-mono text-sm text-cyan-300 overflow-x-auto">
+            <pre>{`Tarea: "Analiza las ventas del Q1 y crea un reporte ejecutivo"
+
+[Fase 1: Planificación]
+IA: "Necesito:
+  1. Extraer datos de ventas Q1
+  2. Calcular métricas clave (crecimiento, productos top)
+  3. Identificar tendencias y patrones
+  4. Comparar con Q1 del año anterior
+  5. Generar visualizaciones
+  6. Crear resumen ejecutivo"
+
+[Fase 2: Ejecución]
+IA: "Extrayendo datos... ✓
+    Calculando métricas... ✓
+    Analizando tendencias... ✓"
+
+[Fase 3: Reflexión]
+IA: "Detecto que el crecimiento es 15%, pero 
+    necesito verificar si es consistente en 
+    todos los productos. Revisando..."
+
+[Fase 4: Corrección]
+IA: "Encontré inconsistencia: Producto A tiene 
+    -5% mientras otros crecen. Ajustando análisis..."
+
+[Fase 5: Resultado Final]
+IA: "Reporte completo con:
+    - Métricas validadas
+    - Análisis de tendencias
+    - Insights accionables
+    - Visualizaciones
+    - Resumen ejecutivo"`}</pre>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Autonomía multietapa -->
+    <div class="mb-20">
+      <h2 class="text-3xl md:text-4xl font-bold text-cyan-400 mb-8 text-center">
+        ⏰ Autonomía Multietapa: Tareas que duran horas o días
+      </h2>
+      
+      <div class="bg-gradient-to-br from-purple-900/20 to-pink-900/20 border border-purple-400/30 p-8 rounded-2xl mb-8">
+        <p class="text-white/80 text-lg mb-6">
+          Los Agentic Workflows pueden realizar tareas <strong class="text-purple-400">asíncronas y de larga duración</strong> mientras tú duermes o trabajas en otras cosas.
+        </p>
+        
+        <div class="space-y-6">
+          <div class="bg-[#0a0a0a] p-6 rounded-xl">
+            <h3 class="text-xl font-bold text-purple-300 mb-4">Ejemplo: Estudio de mercado profundo</h3>
+            <div class="space-y-4">
+              <div class="bg-[#141414] p-4 rounded-lg">
+                <p class="text-purple-300 font-semibold mb-2">Tarea asignada (lunes 9am):</p>
+                <p class="text-white/70 text-sm italic">
+                  "Realiza un estudio completo del mercado de SaaS en España: competidores, precios, features, estrategias de marketing, y oportunidades de nicho"
+                </p>
+              </div>
+              
+              <div class="bg-[#141414] p-4 rounded-lg">
+                <p class="text-cyan-300 font-semibold mb-2">Lo que hace el agente (automáticamente):</p>
+                <div class="space-y-2 text-sm text-white/70">
+                  <div class="flex items-start gap-2">
+                    <span class="text-green-400">✓</span>
+                    <span><strong>Día 1:</strong> Identifica 50+ competidores, recopila información básica</span>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <span class="text-green-400">✓</span>
+                    <span><strong>Día 2:</strong> Analiza precios, features, modelos de negocio</span>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <span class="text-green-400">✓</span>
+                    <span><strong>Día 3:</strong> Investiga estrategias de marketing, canales, contenido</span>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <span class="text-green-400">✓</span>
+                    <span><strong>Día 4:</strong> Identifica gaps y oportunidades, genera insights</span>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <span class="text-green-400">✓</span>
+                    <span><strong>Día 5:</strong> Crea reporte completo con visualizaciones</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="bg-green-900/20 border border-green-500/30 p-4 rounded-lg">
+                <p class="text-green-300 font-semibold mb-2">Resultado (viernes 5pm):</p>
+                <p class="text-white/70 text-sm">
+                  Reporte de 80 páginas con análisis completo, listo para revisión. Tú solo supervisas y ajustas detalles finales.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Arquitectura de Agentic Workflows -->
+    <div class="mb-20">
+      <h2 class="text-3xl md:text-4xl font-bold text-cyan-400 mb-8 text-center">
+        🏗️ Arquitectura de un Agentic Workflow
+      </h2>
+      
+      <div class="bg-gradient-to-br from-green-900/20 to-emerald-900/20 border border-green-400/30 p-8 rounded-2xl mb-8">
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-[#0a0a0a] p-6 rounded-xl">
+            <h3 class="text-xl font-bold text-green-300 mb-4">Componentes clave:</h3>
+            <div class="space-y-4">
+              <div>
+                <p class="text-green-400 font-semibold mb-2">1. Planner (Planificador)</p>
+                <p class="text-white/70 text-sm">
+                  Analiza la tarea y crea un plan de acción detallado con pasos específicos.
+                </p>
+              </div>
+              
+              <div>
+                <p class="text-green-400 font-semibold mb-2">2. Executor (Ejecutor)</p>
+                <p class="text-white/70 text-sm">
+                  Ejecuta cada paso del plan, utilizando herramientas y APIs necesarias.
+                </p>
+              </div>
+              
+              <div>
+                <p class="text-green-400 font-semibold mb-2">3. Reflector (Reflexión)</p>
+                <p class="text-white/70 text-sm">
+                  Evalúa resultados después de cada paso y decide si continuar o ajustar.
+                </p>
+              </div>
+              
+              <div>
+                <p class="text-green-400 font-semibold mb-2">4. Corrector (Corrector)</p>
+                <p class="text-white/70 text-sm">
+                  Aplica correcciones cuando se detectan errores o inconsistencias.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="bg-[#0a0a0a] p-6 rounded-xl">
+            <h3 class="text-xl font-bold text-green-300 mb-4">Flujo de ejecución:</h3>
+            <div class="bg-[#141414] p-4 rounded-lg font-mono text-xs text-green-300 overflow-x-auto">
+              <pre>{`┌─────────────┐
+│   Tarea     │
+│  Recibida   │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│   Planner   │ ← Crea plan
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Executor   │ ← Ejecuta paso 1
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│  Reflector  │ ← Evalúa resultado
+└──────┬──────┘
+       │
+   ┌───┴───┐
+   │ ¿OK?  │
+   └───┬───┘
+       │
+   ┌───┴───┐
+   │  Sí   │  No
+   │   │   │
+   ▼   │   ▼
+┌──────┴───┐
+│ Siguiente│ Corrector
+│   Paso   │
+└──────┬───┘
+       │
+       ▼
+┌─────────────┐
+│  Resultado  │
+│    Final    │
+└─────────────┘`}</pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Casos de uso reales -->
+    <div class="mb-20">
+      <h2 class="text-3xl md:text-4xl font-bold text-cyan-400 mb-12 text-center">
+        🏆 Casos de uso reales con Agentic Workflows
+      </h2>
+      
+      <div class="space-y-8">
+        <div class="bg-gradient-to-br from-cyan-900/20 to-blue-900/20 border border-cyan-400/30 p-8 rounded-2xl">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="text-5xl">📊</div>
+            <div>
+              <h3 class="text-2xl font-bold text-cyan-400 mb-2">Caso 1: Análisis de datos complejo</h3>
+              <p class="text-white/60 text-sm">Empresa: Consultoría | Sector: Análisis de negocio</p>
+            </div>
+          </div>
+          
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-[#0a0a0a] p-6 rounded-xl">
+              <p class="text-cyan-300 font-semibold mb-3">Tarea:</p>
+              <p class="text-white/70 text-sm mb-4">
+                Analizar 10 años de datos de ventas, identificar tendencias, predecir demanda futura y crear estrategia de crecimiento.
+              </p>
+              <p class="text-cyan-300 font-semibold mb-3">Workflow agéntico:</p>
+              <ul class="text-white/70 text-sm space-y-2">
+                <li>1. Planifica análisis (identifica datasets, métricas clave)</li>
+                <li>2. Extrae y limpia datos (detección automática de errores)</li>
+                <li>3. Analiza patrones (reflexiona sobre significancia)</li>
+                <li>4. Genera predicciones (valida modelos estadísticos)</li>
+                <li>5. Crea estrategia (sintetiza insights)</li>
+              </ul>
+            </div>
+            
+            <div class="bg-[#0a0a0a] p-6 rounded-xl">
+              <p class="text-green-300 font-semibold mb-3">Resultados:</p>
+              <ul class="text-white/70 text-sm space-y-2">
+                <li>• <strong>Tiempo:</strong> De 2 semanas → 3 días</li>
+                <li>• <strong>Calidad:</strong> Análisis más profundo y completo</li>
+                <li>• <strong>Precisión:</strong> 92% en predicciones (vs 75% manual)</li>
+                <li>• <strong>Coste:</strong> -60% vs equipo de analistas</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-br from-purple-900/20 to-pink-900/20 border border-purple-400/30 p-8 rounded-2xl">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="text-5xl">📝</div>
+            <div>
+              <h3 class="text-2xl font-bold text-purple-400 mb-2">Caso 2: Investigación y redacción</h3>
+              <p class="text-white/60 text-sm">Empresa: Agencia de marketing | Sector: Contenido</p>
+            </div>
+          </div>
+          
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-[#0a0a0a] p-6 rounded-xl">
+              <p class="text-purple-300 font-semibold mb-3">Tarea:</p>
+              <p class="text-white/70 text-sm mb-4">
+                Crear guía completa de 5,000 palabras sobre "Mejores prácticas de SEO en 2025" con investigación, estructura y redacción.
+              </p>
+              <p class="text-purple-300 font-semibold mb-3">Workflow agéntico:</p>
+              <ul class="text-white/70 text-sm space-y-2">
+                <li>1. Planifica investigación (fuentes, temas clave)</li>
+                <li>2. Investiga y recopila información</li>
+                <li>3. Reflexiona sobre relevancia y actualidad</li>
+                <li>4. Estructura contenido lógicamente</li>
+                <li>5. Redacta y revisa calidad</li>
+                <li>6. Corrige y mejora iterativamente</li>
+              </ul>
+            </div>
+            
+            <div class="bg-[#0a0a0a] p-6 rounded-xl">
+              <p class="text-green-300 font-semibold mb-3">Resultados:</p>
+              <ul class="text-white/70 text-sm space-y-2">
+                <li>• <strong>Tiempo:</strong> De 8 horas → 2 horas (supervisión)</li>
+                <li>• <strong>Calidad:</strong> Contenido más completo y actualizado</li>
+                <li>• <strong>SEO:</strong> Mejor optimizado (IA verifica keywords)</li>
+                <li>• <strong>Escalabilidad:</strong> 5x más contenido producido</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-br from-green-900/20 to-emerald-900/20 border border-green-400/30 p-8 rounded-2xl">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="text-5xl">🔍</div>
+            <div>
+              <h3 class="text-2xl font-bold text-green-400 mb-2">Caso 3: Auditoría de seguridad</h3>
+              <p class="text-white/60 text-sm">Empresa: Tech startup | Sector: Seguridad informática</p>
+            </div>
+          </div>
+          
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-[#0a0a0a] p-6 rounded-xl">
+              <p class="text-green-300 font-semibold mb-3">Tarea:</p>
+              <p class="text-white/70 text-sm mb-4">
+                Auditar código, infraestructura y políticas de seguridad, identificar vulnerabilidades y generar plan de remediación.
+              </p>
+              <p class="text-green-300 font-semibold mb-3">Workflow agéntico:</p>
+              <ul class="text-white/70 text-sm space-y-2">
+                <li>1. Planifica auditoría (áreas a revisar)</li>
+                <li>2. Escanea código y configuración</li>
+                <li>3. Analiza vulnerabilidades (reflexiona sobre severidad)</li>
+                <li>4. Prioriza riesgos</li>
+                <li>5. Genera plan de acción</li>
+                <li>6. Verifica completitud</li>
+              </ul>
+            </div>
+            
+            <div class="bg-[#0a0a0a] p-6 rounded-xl">
+              <p class="text-green-300 font-semibold mb-3">Resultados:</p>
+              <ul class="text-white/70 text-sm space-y-2">
+                <li>• <strong>Tiempo:</strong> De 2 semanas → 2 días</li>
+                <li>• <strong>Cobertura:</strong> 95% vs 70% manual</li>
+                <li>• <strong>Precisión:</strong> 98% falsos positivos reducidos</li>
+                <li>• <strong>Actualización:</strong> Auditorías continuas automáticas</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cómo implementar -->
+    <div class="mb-20 bg-gradient-to-r from-cyan-900/30 via-blue-900/30 to-purple-900/30 border-2 border-cyan-400/50 p-10 rounded-3xl">
+      <h2 class="text-3xl md:text-4xl font-bold text-cyan-400 mb-8 text-center">
+        🚀 Cómo implementar Agentic Workflows
+      </h2>
+      
+      <div class="space-y-6">
+        <div class="bg-[#0a0a0a] p-6 rounded-xl border-l-4 border-cyan-400">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="bg-cyan-400 text-black font-bold text-xl w-10 h-10 rounded-full flex items-center justify-center">1</div>
+            <h3 class="text-2xl font-bold text-cyan-400">Define tareas candidatas</h3>
+          </div>
+          <p class="text-white/80 ml-14 mb-3">
+            Identifica procesos que se benefician de planificación y reflexión:
+          </p>
+          <ul class="text-white/70 ml-14 space-y-2 text-sm">
+            <li>• Tareas complejas con múltiples pasos</li>
+            <li>• Procesos que requieren verificación de calidad</li>
+            <li>• Trabajos que pueden durar horas o días</li>
+            <li>• Procesos que se repiten frecuentemente</li>
+          </ul>
+        </div>
+
+        <div class="bg-[#0a0a0a] p-6 rounded-xl border-l-4 border-purple-400">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="bg-purple-400 text-black font-bold text-xl w-10 h-10 rounded-full flex items-center justify-center">2</div>
+            <h3 class="text-2xl font-bold text-purple-400">Diseña el workflow</h3>
+          </div>
+          <p class="text-white/80 ml-14 mb-3">
+            Estructura el flujo con componentes claros:
+          </p>
+          <ul class="text-white/70 ml-14 space-y-2 text-sm">
+            <li>• Planner: Cómo planifica la tarea</li>
+            <li>• Executor: Qué herramientas usa</li>
+            <li>• Reflector: Criterios de evaluación</li>
+            <li>• Corrector: Cómo corrige errores</li>
+          </ul>
+        </div>
+
+        <div class="bg-[#0a0a0a] p-6 rounded-xl border-l-4 border-green-400">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="bg-green-400 text-black font-bold text-xl w-10 h-10 rounded-full flex items-center justify-center">3</div>
+            <h3 class="text-2xl font-bold text-green-400">Implementa con frameworks</h3>
+          </div>
+          <p class="text-white/80 ml-14 mb-3">
+            Usa herramientas diseñadas para agentic workflows:
+          </p>
+          <ul class="text-white/70 ml-14 space-y-2 text-sm">
+            <li>• <strong>LangGraph:</strong> Para workflows complejos con estado</li>
+            <li>• <strong>AutoGPT/AgentGPT:</strong> Para agentes autónomos</li>
+            <li>• <strong>ReAct:</strong> Para razonamiento y acción</li>
+            <li>• <strong>Custom:</strong> Construye tu propio con LangChain</li>
+          </ul>
+        </div>
+
+        <div class="bg-[#0a0a0a] p-6 rounded-xl border-l-4 border-yellow-400">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="bg-yellow-400 text-black font-bold text-xl w-10 h-10 rounded-full flex items-center justify-center">4</div>
+            <h3 class="text-2xl font-bold text-yellow-400">Itera y mejora</h3>
+          </div>
+          <p class="text-white/80 ml-14 mb-3">
+            Los agentic workflows mejoran con el tiempo:
+          </p>
+          <ul class="text-white/70 ml-14 space-y-2 text-sm">
+            <li>• Monitorea ejecuciones y resultados</li>
+            <li>• Identifica puntos de fallo</li>
+            <li>• Ajusta planificación y reflexión</li>
+            <li>• Aprende de errores pasados</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA final -->
+    <div class="text-center max-w-4xl mx-auto mt-20">
+      <div class="bg-gradient-to-r from-cyan-900/30 to-blue-900/30 border-2 border-cyan-400/50 p-10 rounded-3xl shadow-[0_0_50px_rgba(0,255,255,0.3)]">
+        <h2 class="text-3xl md:text-4xl font-bold text-cyan-400 mb-6">
+          ¿Listo para automatizar tareas complejas con IA que piensa?
+        </h2>
+        <p class="text-xl text-white/90 mb-4">
+          En <strong class="text-cyan-400">Vectoriza.me</strong> diseñamos e implementamos Agentic Workflows que planifican, ejecutan y mejoran iterativamente para resolver tareas complejas de forma autónoma.
+        </p>
+        <div class="grid md:grid-cols-3 gap-4 mb-8 text-left">
+          <div class="bg-[#0a0a0a] p-4 rounded-lg">
+            <p class="text-cyan-300 font-semibold mb-2">✅ Diseño de workflows</p>
+            <p class="text-white/70 text-sm">Identificamos tareas y diseñamos flujos agénticos</p>
+          </div>
+          <div class="bg-[#0a0a0a] p-4 rounded-lg">
+            <p class="text-cyan-300 font-semibold mb-2">✅ Implementación completa</p>
+            <p class="text-white/70 text-sm">Planner, Executor, Reflector y Corrector</p>
+          </div>
+          <div class="bg-[#0a0a0a] p-4 rounded-lg">
+            <p class="text-cyan-300 font-semibold mb-2">✅ Optimización continua</p>
+            <p class="text-white/70 text-sm">Mejora iterativa basada en resultados</p>
+          </div>
+        </div>
+        <a href="/#finalcta" class="inline-block px-10 py-5 bg-cyan-400 hover:bg-cyan-500 text-black font-bold rounded-full shadow-[0_0_30px_rgba(0,255,255,0.5)] hover:shadow-[0_0_50px_rgba(0,255,255,0.7)] transition-all text-xl transform hover:scale-105">
+          🚀 Solicitar consulta sobre Agentic Workflows
+        </a>
+        <p class="text-white/60 text-sm mt-6">
+          Sin compromiso • Análisis de casos de uso • Plan de implementación
+        </p>
+      </div>
+    </div>
+
+  </section>
+</DefaultLayout>
+

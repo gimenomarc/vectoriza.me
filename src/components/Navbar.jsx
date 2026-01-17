@@ -23,10 +23,10 @@ export default function Navbar() {
     { id: 'features', label: 'Agentes & Web' },
     { id: 'usecases', label: 'Casos reales' },
     { id: 'benefits', label: 'Impacto' },
+    { id: 'blog', label: 'Blog' },
     { id: 'howitworks', label: 'Proceso' },
     { id: 'about', label: 'Sobre mí' },
     { id: 'finalcta', label: 'Contacto' },
-    { href: '/blog', label: 'Blog', external: true }
   ];
 
   return (

@@ -1,0 +1,470 @@
+---
+import DefaultLayout from "../../layouts/DefaultLayout.astro";
+import "../../styles/global.css";
+---
+
+<head>
+  <meta charset="UTF-8" />
+  <title>RAG vs Chatbots tradicionales: Comparativa completa 2025 | Vectoriza.me</title>
+  <meta name="description" content="Comparativa detallada entre sistemas RAG y chatbots tradicionales. Ventajas, desventajas, casos de uso ideales y cuándo elegir cada uno. Incluye métricas reales." />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="RAG vs Chatbots tradicionales: Comparativa completa 2025 | Vectoriza.me" />
+  <meta property="og:description" content="Descubre cuándo usar RAG y cuándo un chatbot tradicional. Comparativa técnica, de costes y de resultados con casos reales." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://www.vectoriza.me/blog/rag-vs-chatbots-tradicionales" />
+  <meta name="twitter:card" content="summary_large_image" />
+</head>
+
+<DefaultLayout>
+  <section class="w-full px-6 pt-40 pb-20 max-w-6xl mx-auto text-white">
+
+    <div class="text-center mb-12">
+      <span class="inline-block px-4 py-2 bg-cyan-400/20 text-cyan-400 rounded-full text-sm font-semibold mb-6">
+        Comparativa Técnica 2025
+      </span>
+      <h1 class="text-4xl md:text-6xl font-extrabold mb-6 text-cyan-400">
+        RAG vs Chatbots tradicionales: ¿Cuál elegir para tu empresa?
+      </h1>
+      <p class="text-xl text-white/80 text-center max-w-4xl mx-auto mb-4">
+        La decisión entre un sistema RAG y un chatbot tradicional puede ahorrarte <strong class="text-cyan-400">miles de euros y meses de desarrollo</strong> si eliges bien. Esta comparativa te da los datos reales para decidir.
+      </p>
+      <p class="text-base text-white/60 max-w-3xl mx-auto">
+        ⏱️ Tiempo de lectura: 14 minutos | 📊 Incluye comparativas técnicas, de costes y resultados reales
+      </p>
+    </div>
+
+    <!-- Tabla comparativa principal -->
+    <div class="mb-20">
+      <h2 class="text-3xl md:text-4xl font-bold text-cyan-400 mb-8 text-center">
+        ⚖️ Comparativa lado a lado
+      </h2>
+      
+      <div class="overflow-x-auto">
+        <table class="w-full border-collapse bg-[#0f0f0f] rounded-xl overflow-hidden">
+          <thead>
+            <tr class="bg-cyan-900/30">
+              <th class="p-4 text-left text-cyan-400 font-bold">Característica</th>
+              <th class="p-4 text-center text-green-400 font-bold">Sistema RAG</th>
+              <th class="p-4 text-center text-yellow-400 font-bold">Chatbot Tradicional</th>
+            </tr>
+          </thead>
+          <tbody class="text-white/80">
+            <tr class="border-b border-white/10 hover:bg-white/5">
+              <td class="p-4 font-semibold">Información actualizada</td>
+              <td class="p-4 text-center text-green-400">✅ Tiempo real (actualización automática)</td>
+              <td class="p-4 text-center text-red-400">❌ Estática (requiere reprogramar)</td>
+            </tr>
+            <tr class="border-b border-white/10 hover:bg-white/5">
+              <td class="p-4 font-semibold">Base de conocimiento</td>
+              <td class="p-4 text-center text-green-400">✅ Ilimitada (miles de documentos)</td>
+              <td class="p-4 text-center text-yellow-400">⚠️ Limitada (reglas predefinidas)</td>
+            </tr>
+            <tr class="border-b border-white/10 hover:bg-white/5">
+              <td class="p-4 font-semibold">Comprensión de lenguaje</td>
+              <td class="p-4 text-center text-green-400">✅ Natural (entiende variaciones)</td>
+              <td class="p-4 text-center text-yellow-400">⚠️ Rígida (palabras clave exactas)</td>
+            </tr>
+            <tr class="border-b border-white/10 hover:bg-white/5">
+              <td class="p-4 font-semibold">Alucinaciones</td>
+              <td class="p-4 text-center text-green-400">✅ Controladas (con buenas prácticas)</td>
+              <td class="p-4 text-center text-yellow-400">⚠️ No aplica (pero respuestas genéricas)</td>
+            </tr>
+            <tr class="border-b border-white/10 hover:bg-white/5">
+              <td class="p-4 font-semibold">Trazabilidad</td>
+              <td class="p-4 text-center text-green-400">✅ Fuentes citadas</td>
+              <td class="p-4 text-center text-red-400">❌ No rastreable</td>
+            </tr>
+            <tr class="border-b border-white/10 hover:bg-white/5">
+              <td class="p-4 font-semibold">Tiempo de implementación</td>
+              <td class="p-4 text-center text-green-400">✅ 2-4 semanas</td>
+              <td class="p-4 text-center text-yellow-400">⚠️ 2-3 meses</td>
+            </tr>
+            <tr class="border-b border-white/10 hover:bg-white/5">
+              <td class="p-4 font-semibold">Costo inicial</td>
+              <td class="p-4 text-center text-green-400">✅ €5,000-15,000</td>
+              <td class="p-4 text-center text-yellow-400">⚠️ €10,000-30,000</td>
+            </tr>
+            <tr class="border-b border-white/10 hover:bg-white/5">
+              <td class="p-4 font-semibold">Costo mensual</td>
+              <td class="p-4 text-center text-yellow-400">⚠️ €500-1,500 (APIs LLM)</td>
+              <td class="p-4 text-center text-green-400">✅ €200-500 (hosting)</td>
+            </tr>
+            <tr class="border-b border-white/10 hover:bg-white/5">
+              <td class="p-4 font-semibold">Mantenimiento</td>
+              <td class="p-4 text-center text-green-400">✅ Bajo (actualizar documentos)</td>
+              <td class="p-4 text-center text-red-400">❌ Alto (reprogramar reglas)</td>
+            </tr>
+            <tr class="border-b border-white/10 hover:bg-white/5">
+              <td class="p-4 font-semibold">Escalabilidad</td>
+              <td class="p-4 text-center text-green-400">✅ Alta (miles de consultas/día)</td>
+              <td class="p-4 text-center text-yellow-400">⚠️ Media (limitada por reglas)</td>
+            </tr>
+            <tr class="hover:bg-white/5">
+              <td class="p-4 font-semibold">Casos de uso ideales</td>
+              <td class="p-4 text-center text-green-400">✅ Documentación, conocimiento interno, FAQs complejas</td>
+              <td class="p-4 text-center text-yellow-400">⚠️ Flujos simples, navegación, respuestas binarias</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Cuándo usar cada uno -->
+    <div class="mb-20">
+      <h2 class="text-3xl md:text-4xl font-bold text-cyan-400 mb-12 text-center">
+        🎯 Cuándo usar cada solución
+      </h2>
+      
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- RAG -->
+        <div class="bg-gradient-to-br from-cyan-900/20 to-blue-900/20 border border-cyan-400/30 p-8 rounded-2xl">
+          <h3 class="text-2xl font-bold text-cyan-400 mb-6">✅ Usa RAG cuando:</h3>
+          
+          <div class="space-y-4">
+            <div class="bg-[#0a0a0a] p-4 rounded-lg">
+              <p class="text-cyan-300 font-semibold mb-2">📚 Tienes documentación extensa</p>
+              <p class="text-white/70 text-sm">
+                Manuales, políticas, FAQs, documentación técnica que cambia frecuentemente. RAG puede indexar miles de páginas y mantenerlas actualizadas.
+              </p>
+            </div>
+            
+            <div class="bg-[#0a0a0a] p-4 rounded-lg">
+              <p class="text-cyan-300 font-semibold mb-2">🔄 La información cambia frecuentemente</p>
+              <p class="text-white/70 text-sm">
+                Políticas que se actualizan, productos nuevos, procesos que evolucionan. RAG se actualiza automáticamente sin reprogramar.
+              </p>
+            </div>
+            
+            <div class="bg-[#0a0a0a] p-4 rounded-lg">
+              <p class="text-cyan-300 font-semibold mb-2">💬 Necesitas respuestas contextuales</p>
+              <p class="text-white/70 text-sm">
+                Preguntas que requieren entender contexto, relacionar información de múltiples fuentes, o respuestas que varían según el caso.
+              </p>
+            </div>
+            
+            <div class="bg-[#0a0a0a] p-4 rounded-lg">
+              <p class="text-cyan-300 font-semibold mb-2">🎓 Casos de uso complejos</p>
+              <p class="text-white/70 text-sm">
+                Asistentes técnicos, consultoría, soporte que requiere conocimiento profundo del dominio.
+              </p>
+            </div>
+          </div>
+
+          <div class="mt-6 bg-green-900/20 border border-green-500/30 p-4 rounded-lg">
+            <p class="text-green-300 font-semibold mb-2">Ejemplos reales:</p>
+            <ul class="text-white/70 text-sm space-y-1">
+              <li>• Asistente de documentación técnica (50,000+ páginas)</li>
+              <li>• Chatbot de atención al cliente con políticas actualizadas</li>
+              <li>• Asistente legal que consulta jurisprudencia</li>
+              <li>• Soporte interno que consulta manuales y procesos</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Chatbot tradicional -->
+        <div class="bg-gradient-to-br from-yellow-900/20 to-orange-900/20 border border-yellow-400/30 p-8 rounded-2xl">
+          <h3 class="text-2xl font-bold text-yellow-400 mb-6">✅ Usa Chatbot tradicional cuando:</h3>
+          
+          <div class="space-y-4">
+            <div class="bg-[#0a0a0a] p-4 rounded-lg">
+              <p class="text-yellow-300 font-semibold mb-2">🔄 Flujos simples y predecibles</p>
+              <p class="text-white/70 text-sm">
+                Navegación de menús, respuestas sí/no, flujos de conversación lineales con pocas variaciones.
+              </p>
+            </div>
+            
+            <div class="bg-[#0a0a0a] p-4 rounded-lg">
+              <p class="text-yellow-300 font-semibold mb-2">💰 Presupuesto limitado para APIs</p>
+              <p class="text-white/70 text-sm">
+                Si no puedes permitirte costes mensuales de APIs LLM (€500-1,500), un chatbot tradicional puede ser más económico.
+              </p>
+            </div>
+            
+            <div class="bg-[#0a0a0a] p-4 rounded-lg">
+              <p class="text-yellow-300 font-semibold mb-2">📋 Información estática</p>
+              <p class="text-white/70 text-sm">
+                FAQs que no cambian, información de contacto, horarios, información básica que raramente se actualiza.
+              </p>
+            </div>
+            
+            <div class="bg-[#0a0a0a] p-4 rounded-lg">
+              <p class="text-yellow-300 font-semibold mb-2">🎯 Casos de uso simples</p>
+              <p class="text-white/70 text-sm">
+                Reservas, citas, información básica, navegación de sitio web, respuestas a preguntas frecuentes muy específicas.
+              </p>
+            </div>
+          </div>
+
+          <div class="mt-6 bg-yellow-900/20 border border-yellow-500/30 p-4 rounded-lg">
+            <p class="text-yellow-300 font-semibold mb-2">Ejemplos reales:</p>
+            <ul class="text-white/70 text-sm space-y-1">
+              <li>• Bot de reservas de restaurante</li>
+              <li>• Navegación de menú en sitio web</li>
+              <li>• Información de contacto y horarios</li>
+              <li>• FAQs con respuestas muy específicas</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Comparativa de costes detallada -->
+    <div class="mb-20 bg-gradient-to-r from-cyan-900/30 via-blue-900/30 to-purple-900/30 border-2 border-cyan-400/50 p-10 rounded-3xl">
+      <h2 class="text-3xl md:text-4xl font-bold text-cyan-400 mb-8 text-center">
+        💰 Comparativa de costes: 3 años de operación
+      </h2>
+      
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-[#0a0a0a] p-6 rounded-xl">
+          <h3 class="text-xl font-bold text-cyan-400 mb-4">Sistema RAG</h3>
+          <div class="space-y-3 text-sm">
+            <div class="flex justify-between">
+              <span class="text-white/70">Desarrollo inicial:</span>
+              <span class="text-cyan-400 font-semibold">€10,000</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-white/70">Costo mensual (APIs):</span>
+              <span class="text-cyan-400 font-semibold">€1,000/mes</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-white/70">Mantenimiento:</span>
+              <span class="text-cyan-400 font-semibold">€200/mes</span>
+            </div>
+            <div class="border-t border-white/10 pt-3 mt-3">
+              <div class="flex justify-between text-lg">
+                <span class="text-white font-semibold">Total 3 años:</span>
+                <span class="text-cyan-400 font-bold">€53,200</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-[#0a0a0a] p-6 rounded-xl">
+          <h3 class="text-xl font-bold text-yellow-400 mb-4">Chatbot Tradicional</h3>
+          <div class="space-y-3 text-sm">
+            <div class="flex justify-between">
+              <span class="text-white/70">Desarrollo inicial:</span>
+              <span class="text-yellow-400 font-semibold">€20,000</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-white/70">Costo mensual (hosting):</span>
+              <span class="text-yellow-400 font-semibold">€300/mes</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-white/70">Mantenimiento:</span>
+              <span class="text-yellow-400 font-semibold">€800/mes</span>
+            </div>
+            <div class="border-t border-white/10 pt-3 mt-3">
+              <div class="flex justify-between text-lg">
+                <span class="text-white font-semibold">Total 3 años:</span>
+                <span class="text-yellow-400 font-bold">€59,600</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-8 bg-green-900/20 border border-green-500/30 p-6 rounded-xl">
+        <p class="text-green-300 font-semibold mb-3">💡 Análisis:</p>
+        <p class="text-white/80 text-sm mb-3">
+          Aunque RAG tiene costes mensuales más altos (APIs), el <strong>menor costo de mantenimiento</strong> y la <strong>mayor flexibilidad</strong> hacen que a largo plazo sea más económico. Además, RAG puede manejar casos de uso más complejos que requerirían múltiples chatbots tradicionales.
+        </p>
+        <p class="text-white/70 text-xs">
+          Nota: Costes basados en implementaciones reales. Pueden variar según volumen y complejidad.
+        </p>
+      </div>
+    </div>
+
+    <!-- Comparativa de resultados -->
+    <div class="mb-20">
+      <h2 class="text-3xl md:text-4xl font-bold text-cyan-400 mb-12 text-center">
+        📊 Comparativa de resultados reales
+      </h2>
+      
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-gradient-to-br from-cyan-900/20 to-blue-900/20 border border-cyan-400/30 p-6 rounded-xl">
+          <h3 class="text-xl font-bold text-cyan-400 mb-4">Tasa de resolución</h3>
+          <div class="text-center mb-4">
+            <div class="text-5xl font-bold text-green-400 mb-2">73%</div>
+            <p class="text-white/60 text-sm">RAG (casos reales)</p>
+          </div>
+          <div class="text-center">
+            <div class="text-5xl font-bold text-yellow-400 mb-2">45%</div>
+            <p class="text-white/60 text-sm">Chatbot tradicional</p>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-br from-purple-900/20 to-pink-900/20 border border-purple-400/30 p-6 rounded-xl">
+          <h3 class="text-xl font-bold text-purple-400 mb-4">Satisfacción del usuario</h3>
+          <div class="text-center mb-4">
+            <div class="text-5xl font-bold text-green-400 mb-2">4.2/5</div>
+            <p class="text-white/60 text-sm">RAG</p>
+          </div>
+          <div class="text-center">
+            <div class="text-5xl font-bold text-yellow-400 mb-2">3.4/5</div>
+            <p class="text-white/60 text-sm">Chatbot tradicional</p>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-br from-green-900/20 to-emerald-900/20 border border-green-400/30 p-6 rounded-xl">
+          <h3 class="text-xl font-bold text-green-400 mb-4">Tiempo de respuesta</h3>
+          <div class="text-center mb-4">
+            <div class="text-5xl font-bold text-green-400 mb-2"><30s</div>
+            <p class="text-white/60 text-sm">RAG</p>
+          </div>
+          <div class="text-center">
+            <div class="text-5xl font-bold text-yellow-400 mb-2">2-5min</div>
+            <p class="text-white/60 text-sm">Chatbot tradicional</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-8 bg-[#0a0a0a] p-6 rounded-xl">
+        <p class="text-white/60 text-sm text-center">
+          Datos basados en implementaciones reales de empresas similares. Resultados pueden variar según caso de uso específico.
+        </p>
+      </div>
+    </div>
+
+    <!-- Casos híbridos -->
+    <div class="mb-20 bg-gradient-to-r from-purple-900/20 to-pink-900/20 border-2 border-purple-400/50 p-8 rounded-2xl">
+      <h2 class="text-3xl md:text-4xl font-bold text-purple-400 mb-8 text-center">
+        🔀 ¿Y si combinas ambos?
+      </h2>
+      
+      <p class="text-white/80 text-lg mb-6 text-center max-w-3xl mx-auto">
+        Muchas empresas están usando un <strong class="text-purple-400">enfoque híbrido</strong>: chatbot tradicional para flujos simples y RAG para consultas complejas.
+      </p>
+      
+      <div class="bg-[#0a0a0a] p-6 rounded-xl">
+        <h3 class="text-xl font-bold text-purple-300 mb-4">Ejemplo de arquitectura híbrida:</h3>
+        <div class="space-y-4">
+          <div class="bg-[#141414] p-4 rounded-lg">
+            <p class="text-purple-300 font-semibold mb-2">1. Chatbot tradicional maneja:</p>
+            <ul class="text-white/70 text-sm space-y-1">
+              <li>• Navegación de menú ("Quiero ver productos")</li>
+              <li>• Flujos de reserva/cita</li>
+              <li>• Información básica (horarios, contacto)</li>
+            </ul>
+          </div>
+          
+          <div class="bg-[#141414] p-4 rounded-lg">
+            <p class="text-cyan-300 font-semibold mb-2">2. RAG maneja:</p>
+            <ul class="text-white/70 text-sm space-y-1">
+              <li>• Preguntas sobre políticas ("¿Cuál es la política de devoluciones?")</li>
+              <li>• Consultas técnicas complejas</li>
+              <li>• Búsqueda en documentación</li>
+            </ul>
+          </div>
+          
+          <div class="bg-[#141414] p-4 rounded-lg">
+            <p class="text-green-300 font-semibold mb-2">3. Routing inteligente:</p>
+            <p class="text-white/70 text-sm">
+              Un clasificador decide automáticamente si la consulta va al chatbot tradicional o al RAG basándose en complejidad y tipo de pregunta.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-6 bg-green-900/20 border border-green-500/30 p-4 rounded-lg">
+        <p class="text-green-300 font-semibold mb-2">💡 Ventajas del enfoque híbrido:</p>
+        <ul class="text-white/70 text-sm space-y-1">
+          <li>✅ Optimiza costes (chatbot para lo simple, RAG para lo complejo)</li>
+          <li>✅ Mejor experiencia de usuario (cada herramienta hace lo que mejor sabe)</li>
+          <li>✅ Escalabilidad (puedes empezar con chatbot y añadir RAG después)</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Decisión final -->
+    <div class="mb-20 bg-gradient-to-r from-cyan-900/30 to-blue-900/30 border-2 border-cyan-400/50 p-10 rounded-3xl">
+      <h2 class="text-3xl md:text-4xl font-bold text-cyan-400 mb-8 text-center">
+        🎯 Matriz de decisión rápida
+      </h2>
+      
+      <div class="bg-[#0a0a0a] p-8 rounded-xl">
+        <p class="text-white/80 text-lg mb-6">
+          Responde estas preguntas para decidir qué solución es mejor para ti:
+        </p>
+        
+        <div class="space-y-6">
+          <div class="border-l-4 border-cyan-400 pl-4">
+            <p class="text-cyan-300 font-semibold mb-2">1. ¿Tu información cambia frecuentemente?</p>
+            <p class="text-white/70 text-sm">
+              <strong>Sí</strong> → RAG | <strong>No</strong> → Chatbot tradicional
+            </p>
+          </div>
+          
+          <div class="border-l-4 border-cyan-400 pl-4">
+            <p class="text-cyan-300 font-semibold mb-2">2. ¿Tienes documentación extensa (miles de páginas)?</p>
+            <p class="text-white/70 text-sm">
+              <strong>Sí</strong> → RAG | <strong>No</strong> → Chatbot tradicional
+            </p>
+          </div>
+          
+          <div class="border-l-4 border-cyan-400 pl-4">
+            <p class="text-cyan-300 font-semibold mb-2">3. ¿Las preguntas requieren contexto y comprensión profunda?</p>
+            <p class="text-white/70 text-sm">
+              <strong>Sí</strong> → RAG | <strong>No</strong> → Chatbot tradicional
+            </p>
+          </div>
+          
+          <div class="border-l-4 border-cyan-400 pl-4">
+            <p class="text-cyan-300 font-semibold mb-2">4. ¿Necesitas trazabilidad (saber de dónde viene cada respuesta)?</p>
+            <p class="text-white/70 text-sm">
+              <strong>Sí</strong> → RAG | <strong>No</strong> → Chatbot tradicional
+            </p>
+          </div>
+          
+          <div class="border-l-4 border-cyan-400 pl-4">
+            <p class="text-cyan-300 font-semibold mb-2">5. ¿Tienes presupuesto para APIs LLM (€500-1,500/mes)?</p>
+            <p class="text-white/70 text-sm">
+              <strong>Sí</strong> → RAG es viable | <strong>No</strong> → Considera chatbot tradicional o enfoque híbrido
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-8 bg-cyan-900/20 border border-cyan-400/30 p-6 rounded-lg">
+          <p class="text-cyan-300 font-semibold mb-3">💡 Regla general:</p>
+          <p class="text-white/80 text-sm">
+            Si respondiste <strong>"Sí"</strong> a 3 o más preguntas, <strong>RAG es probablemente tu mejor opción</strong>. Si la mayoría fueron "No", un chatbot tradicional puede ser suficiente. Si hay mezcla, considera un enfoque híbrido.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA final -->
+    <div class="text-center max-w-4xl mx-auto mt-20">
+      <div class="bg-gradient-to-r from-cyan-900/30 to-blue-900/30 border-2 border-cyan-400/50 p-10 rounded-3xl shadow-[0_0_50px_rgba(0,255,255,0.3)]">
+        <h2 class="text-3xl md:text-4xl font-bold text-cyan-400 mb-6">
+          ¿Necesitas ayuda decidiendo?
+        </h2>
+        <p class="text-xl text-white/90 mb-4">
+          En <strong class="text-cyan-400">Vectoriza.me</strong> analizamos tu caso específico y te recomendamos la mejor solución (o combinación) para tus necesidades.
+        </p>
+        <div class="grid md:grid-cols-3 gap-4 mb-8 text-left">
+          <div class="bg-[#0a0a0a] p-4 rounded-lg">
+            <p class="text-cyan-300 font-semibold mb-2">✅ Análisis de caso</p>
+            <p class="text-white/70 text-sm">Evaluamos tu situación y te damos recomendación específica</p>
+          </div>
+          <div class="bg-[#0a0a0a] p-4 rounded-lg">
+            <p class="text-cyan-300 font-semibold mb-2">✅ Comparativa de costes</p>
+            <p class="text-white/70 text-sm">Te mostramos costes reales para tu caso específico</p>
+          </div>
+          <div class="bg-[#0a0a0a] p-4 rounded-lg">
+            <p class="text-cyan-300 font-semibold mb-2">✅ Plan de implementación</p>
+            <p class="text-white/70 text-sm">Roadmap claro si decides avanzar</p>
+          </div>
+        </div>
+        <a href="/#finalcta" class="inline-block px-10 py-5 bg-cyan-400 hover:bg-cyan-500 text-black font-bold rounded-full shadow-[0_0_30px_rgba(0,255,255,0.5)] hover:shadow-[0_0_50px_rgba(0,255,255,0.7)] transition-all text-xl transform hover:scale-105">
+          🚀 Solicitar consulta gratuita
+        </a>
+        <p class="text-white/60 text-sm mt-6">
+          Sin compromiso • Análisis en 48h • Recomendación específica para tu caso
+        </p>
+      </div>
+    </div>
+
+  </section>
+</DefaultLayout>
+

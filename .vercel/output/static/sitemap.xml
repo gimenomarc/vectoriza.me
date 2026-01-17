@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Home y secciones -->
+  <url>
+    <loc>https://www.vectoriza.me/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://www.vectoriza.me/#hero</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.vectoriza.me/#features</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.vectoriza.me/#benefits</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.vectoriza.me/#usecases</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.vectoriza.me/#howitworks</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.vectoriza.me/#finalcta</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog principal -->
+  <url>
+    <loc>https://www.vectoriza.me/blog</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog posts individuales -->
+  <url>
+    <loc>https://www.vectoriza.me/blog/como-automatizar-procesos-con-ia</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.vectoriza.me/blog/que-es-un-rag</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.vectoriza.me/blog/buenas-practicas-rag</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.vectoriza.me/blog/multiplica-productividad-ia</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.vectoriza.me/blog/transmorphai-integraciones-api</loc>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>

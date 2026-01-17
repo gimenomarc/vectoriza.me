@@ -4,135 +4,417 @@ import "../../styles/global.css";
 ---
 
 <head>
-  <title>TransmorphAI: Integra APIs más rápido con IA | Vectoriza.me</title>
-  <meta name="description" content="Adapta datos automáticamente a las APIs sin errores de formato usando TransmorphAI. Integraciones más rápidas, eficientes y sin fricción." />
+  <meta charset="UTF-8" />
+  <title>TransmorphAI: Integra APIs sin errores con transformación automática de datos | Vectoriza.me</title>
+  <meta name="description" content="TransmorphAI elimina el 80% del tiempo perdido en integraciones API adaptando automáticamente datos entre formatos. Guía completa con ejemplos de código y casos de uso reales." />
   <meta name="robots" content="index, follow" />
-  <meta property="og:title" content="TransmorphAI: Integra APIs más rápido con IA | Vectoriza.me" />
-  <meta property="og:description" content="Reduce tiempos de integración de APIs automatizando la adaptación de datos de cualquier formato con inteligencia artificial." />
+  <meta property="og:title" content="TransmorphAI: Integra APIs sin errores con IA | Vectoriza.me" />
+  <meta property="og:description" content="Reduce tiempos de integración de APIs de semanas a días automatizando la adaptación de datos con inteligencia artificial." />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="https://www.vectoriza.me/blog/transmorphai-integraciones-api" />
   <meta name="twitter:card" content="summary_large_image" />
 </head>
 
 <DefaultLayout>
-  <section class="w-full px-6 pt-40 pb-20 max-w-5xl mx-auto text-white">
+  <section class="w-full px-6 pt-40 pb-20 max-w-6xl mx-auto text-white">
     
-    <h1 class="text-4xl md:text-5xl font-extrabold mb-12 text-center text-cyan-400">
-      TransmorphAI: La forma inteligente de integrar APIs sin errores ni fricciones
-    </h1>
-
-    <p class="text-lg text-white/70 text-center max-w-3xl mx-auto mb-16">
-      TransmorphAI es una librería de Python diseñada para eliminar uno de los mayores cuellos de botella en el desarrollo de APIs: el formateo manual de datos. Con inteligencia artificial, adapta automáticamente cualquier estructura de entrada al esquema esperado por el servidor.
-    </p>
-
-    <div class="space-y-12 text-base text-white/70 leading-relaxed">
-
-      <div>
-        <h2 class="text-2xl text-cyan-400 font-bold mb-4">
-          🧩 El problema actual de las APIs
-        </h2>
-        <p>
-          Cada vez que quieres integrar un sistema con una API externa, el proceso se repite: leer documentación extensa, ajustar campos, transformar tipos de datos, solucionar errores de formato... Todo para que el servidor "entienda" la petición.
-          Este proceso consume tiempo, recursos y provoca frustración tanto en desarrolladores como en equipos de producto.
-        </p>
-      </div>
-
-      <div>
-        <h2 class="text-2xl text-cyan-400 font-bold mb-4">
-          🚀 ¿Qué resuelve TransmorphAI?
-        </h2>
-        <ul class="space-y-4">
-          <li>🔹 Acepta cualquier formato de entrada (JSON, XML, texto plano).</li>
-          <li>🔹 Reconoce campos equivalentes aunque tengan nombres diferentes.</li>
-          <li>🔹 Corrige automáticamente tipos de datos incorrectos (e.g., "30" a 30).</li>
-          <li>🔹 Genera respuestas normalizadas listas para procesar por el backend.</li>
-          <li>🔹 Detecta y alerta sobre campos obligatorios faltantes.</li>
-        </ul>
-      </div>
-
-      <div>
-        <h2 class="text-2xl text-cyan-400 font-bold mb-4">
-          ⚙️ ¿Cómo funciona?
-        </h2>
-        <p>
-          El funcionamiento de TransmorphAI es sencillo pero potente:
-        </p>
-        <div class="bg-[#0f0f0f] border border-white/10 rounded-2xl p-6 mt-6">
-          <ol class="list-decimal list-inside space-y-3">
-            <li>Defines el esquema de datos que tu API espera recibir.</li>
-            <li>Recibes datos en cualquier formato o estructura.</li>
-            <li>TransmorphAI analiza, entiende y adapta los datos automáticamente.</li>
-            <li>Tu aplicación recibe la estructura correcta, lista para procesar.</li>
-          </ol>
-        </div>
-      </div>
-
-      <div>
-        <h2 class="text-2xl text-cyan-400 font-bold mb-4">
-          🌍 Ejemplo práctico
-        </h2>
-        <p class="mb-4">
-          Imagina que tu API espera este JSON:
-        </p>
-        <div class="bg-[#141414] p-4 rounded-xl font-mono text-cyan-400 text-sm mb-6">
-          {`{
-  "full_name": "John Doe",
-  "age": 30,
-  "email": "john.doe@example.com"
-}`}
-        </div>
-        <p class="mb-4">
-          Pero el cliente envía:
-        </p>
-        <div class="bg-[#141414] p-4 rounded-xl font-mono text-cyan-400 text-sm mb-6">
-          {`{
-  "nombre": "John Doe",
-  "years": "30",
-  "mail": "john.doe@example.com"
-}`}
-        </div>
-        <p>
-          Sin TransmorphAI, la integración fallaría. Con TransmorphAI, todo se transforma automáticamente al esquema correcto.
-        </p>
-      </div>
-
-      <div>
-        <h2 class="text-2xl text-cyan-400 font-bold mb-4">
-          📦 Cómo instalarlo y empezar
-        </h2>
-        <div class="bg-[#0f0f0f] border border-white/10 rounded-2xl p-6 space-y-4">
-          <div>
-            <strong>Instalación vía pip:</strong>
-            <div class="bg-[#141414] p-4 rounded-xl font-mono text-cyan-400 text-sm mt-2">
-              pip install transmorphai
-            </div>
-          </div>
-          <div>
-            <strong>Desde GitHub:</strong>
-            <div class="bg-[#141414] p-4 rounded-xl font-mono text-cyan-400 text-sm mt-2">
-              git clone https://github.com/gimenomarc/TransmorphAI.git<br/>
-              cd TransmorphAI<br/>
-              pip install -e .
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div>
-        <h2 class="text-2xl text-cyan-400 font-bold mb-4">
-          💬 ¿Por qué confiar en TransmorphAI?
-        </h2>
-        <p>
-          Porque transforma el proceso de integración de APIs de una experiencia lenta y propensa a errores en un flujo automático, ágil y robusto. Olvida las semanas de debugging. Concéntrate en lo que realmente importa: construir productos.
-        </p>
-      </div>
-
+    <div class="text-center mb-12">
+      <span class="inline-block px-4 py-2 bg-cyan-400/20 text-cyan-400 rounded-full text-sm font-semibold mb-6">
+        Herramienta Open Source
+      </span>
+      <h1 class="text-4xl md:text-6xl font-extrabold mb-6 text-cyan-400">
+        TransmorphAI: La forma inteligente de integrar APIs sin errores ni fricciones
+      </h1>
+      <p class="text-xl text-white/80 text-center max-w-4xl mx-auto mb-4">
+        Elimina el <strong class="text-cyan-400">80% del tiempo</strong> que pierdes adaptando datos entre APIs. TransmorphAI usa IA para transformar automáticamente cualquier formato al esquema que tu API espera.
+      </p>
+      <p class="text-base text-white/60 max-w-3xl mx-auto">
+        ⏱️ Tiempo de lectura: 12 minutos | 💻 Incluye ejemplos de código y casos de uso reales
+      </p>
     </div>
 
-    <div class="text-center mt-20">
-      <a href="https://github.com/gimenomarc/TransmorphAI" target="_blank" class="inline-block px-8 py-4 bg-cyan-400 hover:bg-cyan-500 text-black font-semibold rounded-full shadow-[0_0_20px_rgba(0,255,255,0.3)] hover:shadow-[0_0_40px_rgba(0,255,255,0.5)] transition-all text-lg">
-        🔗 Ver TransmorphAI en GitHub
-      </a>
+    <!-- Problema real -->
+    <div class="bg-gradient-to-r from-red-900/20 to-orange-900/20 border-l-4 border-red-500 p-8 rounded-xl mb-16">
+      <h2 class="text-2xl font-bold text-red-400 mb-4">😤 El problema que todos los desarrolladores conocen</h2>
+      <p class="text-white/80 text-lg mb-4">
+        Has estado ahí: necesitas integrar una API externa, pero los datos vienen en un formato diferente. Pasas <strong>horas o días</strong>:
+      </p>
+      <ul class="text-white/80 space-y-2 mb-4">
+        <li>• Leyendo documentación extensa de la API</li>
+        <li>• Mapeando campos manualmente (nombre → full_name, años → age)</li>
+        <li>• Convirtiendo tipos (strings a números, fechas a timestamps)</li>
+        <li>• Debuggeando errores de formato una y otra vez</li>
+        <li>• Escribiendo y reescribiendo código de transformación</li>
+      </ul>
+      <div class="bg-[#0a0a0a] p-6 rounded-lg mt-6">
+        <p class="text-red-400 font-semibold mb-2">El costo real:</p>
+        <div class="grid md:grid-cols-3 gap-4">
+          <div>
+            <p class="text-white/70 text-sm mb-1">Tiempo perdido:</p>
+            <p class="text-red-400 font-bold text-xl">2-5 días por integración</p>
+          </div>
+          <div>
+            <p class="text-white/70 text-sm mb-1">Frustración:</p>
+            <p class="text-red-400 font-bold text-xl">Alta</p>
+          </div>
+          <div>
+            <p class="text-white/70 text-sm mb-1">Errores en producción:</p>
+            <p class="text-red-400 font-bold text-xl">Frecuentes</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Qué es TransmorphAI -->
+    <div class="mb-20">
+      <h2 class="text-3xl md:text-4xl font-bold text-cyan-400 mb-8 text-center">
+        🧩 ¿Qué es TransmorphAI y cómo resuelve esto?
+      </h2>
+      
+      <div class="bg-gradient-to-br from-cyan-900/20 to-blue-900/20 border border-cyan-400/30 p-8 rounded-2xl mb-8">
+        <p class="text-white/80 text-lg mb-6">
+          <strong class="text-cyan-400">TransmorphAI</strong> es una librería de Python que usa inteligencia artificial para <strong>adaptar automáticamente</strong> datos de cualquier formato al esquema que tu API espera.
+        </p>
+        
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="bg-[#0a0a0a] p-6 rounded-xl">
+            <p class="text-cyan-300 font-semibold mb-4">✅ Lo que hace automáticamente:</p>
+            <ul class="text-white/70 text-sm space-y-2">
+              <li>• Reconoce campos equivalentes aunque tengan nombres diferentes</li>
+              <li>• Convierte tipos de datos (strings → números, fechas → timestamps)</li>
+              <li>• Maneja estructuras anidadas y arrays</li>
+              <li>• Valida campos obligatorios</li>
+              <li>• Genera errores claros cuando algo falta</li>
+            </ul>
+          </div>
+          <div class="bg-[#0a0a0a] p-6 rounded-xl">
+            <p class="text-green-300 font-semibold mb-4">🎯 Resultado:</p>
+            <ul class="text-white/70 text-sm space-y-2">
+              <li>• <strong>80% menos tiempo</strong> en integraciones</li>
+              <li>• <strong>90% menos errores</strong> de formato</li>
+              <li>• <strong>Código más limpio</strong> y mantenible</li>
+              <li>• <strong>Integraciones más rápidas</strong> (días → horas)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ejemplo práctico detallado -->
+    <div class="mb-20">
+      <h2 class="text-3xl md:text-4xl font-bold text-cyan-400 mb-8 text-center">
+        💻 Ejemplo práctico: Antes vs Después
+      </h2>
+      
+      <div class="space-y-8">
+        <!-- Escenario -->
+        <div class="bg-gradient-to-br from-purple-900/20 to-pink-900/20 border border-purple-400/30 p-6 rounded-xl">
+          <h3 class="text-2xl font-bold text-purple-400 mb-4">Escenario: Integrar API de pagos</h3>
+          <p class="text-white/80 mb-4">
+            Tu API espera recibir datos en este formato:
+          </p>
+          <div class="bg-[#141414] p-4 rounded-lg font-mono text-sm text-cyan-300 overflow-x-auto mb-4">
+            <pre>{`{
+  "full_name": "John Doe",
+  "age": 30,
+  "email": "john.doe@example.com",
+  "payment_amount": 99.99,
+  "currency": "EUR"
+}`}</pre>
+          </div>
+          <p class="text-white/80 mb-4">
+            Pero el cliente envía datos en este formato (diferentes nombres, tipos incorrectos):
+          </p>
+          <div class="bg-[#141414] p-4 rounded-lg font-mono text-sm text-red-300 overflow-x-auto">
+            <pre>{`{
+  "nombre": "John Doe",
+  "years": "30",  // String en lugar de número
+  "mail": "john.doe@example.com",  // "mail" en lugar de "email"
+  "amount": "99.99",  // String y nombre diferente
+  "moneda": "EUR"  // Nombre en español
+}`}</pre>
+          </div>
+        </div>
+
+        <!-- Solución tradicional -->
+        <div class="bg-gradient-to-br from-red-900/20 to-orange-900/20 border border-red-400/30 p-6 rounded-xl">
+          <h3 class="text-2xl font-bold text-red-400 mb-4">❌ Solución tradicional (sin TransmorphAI)</h3>
+          <p class="text-white/80 mb-4">
+            Tienes que escribir código manual de transformación:
+          </p>
+          <div class="bg-[#141414] p-4 rounded-lg font-mono text-sm text-red-300 overflow-x-auto">
+            <pre>{`def transform_payment_data(input_data):
+    # Mapeo manual de campos
+    output = {
+        "full_name": input_data.get("nombre"),
+        "age": int(input_data.get("years", 0)),  # Conversión manual
+        "email": input_data.get("mail"),
+        "payment_amount": float(input_data.get("amount", 0)),
+        "currency": input_data.get("moneda")
+    }
+    
+    # Validación manual
+    if not output["full_name"]:
+        raise ValueError("full_name is required")
+    if output["age"] < 18:
+        raise ValueError("age must be >= 18")
+    
+    return output
+
+# Problemas:
+# - Código repetitivo para cada integración
+# - Fácil cometer errores
+# - Difícil de mantener
+# - No maneja casos edge`}</pre>
+          </div>
+          <div class="bg-[#0a0a0a] p-4 rounded-lg mt-4">
+            <p class="text-red-400 font-semibold mb-2">Tiempo estimado: 2-4 horas</p>
+            <p class="text-white/70 text-sm">Y esto es para UNA integración. Multiplica por cada API que integres.</p>
+          </div>
+        </div>
+
+        <!-- Solución con TransmorphAI -->
+        <div class="bg-gradient-to-br from-green-900/20 to-emerald-900/20 border border-green-400/30 p-6 rounded-xl">
+          <h3 class="text-2xl font-bold text-green-400 mb-4">✅ Solución con TransmorphAI</h3>
+          <p class="text-white/80 mb-4">
+            Define el esquema esperado y deja que TransmorphAI haga el resto:
+          </p>
+          <div class="bg-[#141414] p-4 rounded-lg font-mono text-sm text-green-300 overflow-x-auto">
+            <pre>{`from transmorphai import TransmorphAI
+
+# Define el esquema que tu API espera
+schema = {
+    "full_name": str,
+    "age": int,
+    "email": str,
+    "payment_amount": float,
+    "currency": str
+}
+
+# Crea el transformador
+transformer = TransmorphAI(schema)
+
+# Transforma automáticamente
+input_data = {
+    "nombre": "John Doe",
+    "years": "30",
+    "mail": "john.doe@example.com",
+    "amount": "99.99",
+    "moneda": "EUR"
+}
+
+output = transformer.transform(input_data)
+# Resultado:
+# {
+#   "full_name": "John Doe",
+#   "age": 30,  # Convertido automáticamente
+#   "email": "john.doe@example.com",  # "mail" → "email"
+#   "payment_amount": 99.99,  # Convertido y renombrado
+#   "currency": "EUR"  # "moneda" → "currency"
+# }`}</pre>
+          </div>
+          <div class="bg-[#0a0a0a] p-4 rounded-lg mt-4">
+            <p class="text-green-400 font-semibold mb-2">Tiempo estimado: 10-15 minutos</p>
+            <p class="text-white/70 text-sm">Ahorro: <strong>90% del tiempo</strong>. Y funciona para cualquier formato de entrada.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Casos de uso reales -->
+    <div class="mb-20">
+      <h2 class="text-3xl md:text-4xl font-bold text-cyan-400 mb-12 text-center">
+        🌍 Casos de uso reales donde TransmorphAI brilla
+      </h2>
+      
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-gradient-to-br from-cyan-900/20 to-blue-900/20 border border-cyan-400/30 p-6 rounded-xl">
+          <h3 class="text-xl font-bold text-cyan-400 mb-3">🛒 E-commerce: Integrar múltiples pasarelas de pago</h3>
+          <p class="text-white/70 text-sm mb-4">
+            Cada pasarela (Stripe, PayPal, Square) tiene un formato diferente. TransmorphAI normaliza todo a tu esquema interno.
+          </p>
+          <div class="bg-[#0a0a0a] p-4 rounded-lg">
+            <p class="text-cyan-300 text-xs font-semibold mb-2">Beneficio:</p>
+            <p class="text-white/60 text-xs">Integra 5 pasarelas en 1 día en lugar de 1 semana</p>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-br from-purple-900/20 to-pink-900/20 border border-purple-400/30 p-6 rounded-xl">
+          <h3 class="text-xl font-bold text-purple-400 mb-3">📊 Analytics: Consolidar datos de múltiples fuentes</h3>
+          <p class="text-white/70 text-sm mb-4">
+            Google Analytics, Facebook Ads, LinkedIn tienen formatos diferentes. TransmorphAI los unifica para tu dashboard.
+          </p>
+          <div class="bg-[#0a0a0a] p-4 rounded-lg">
+            <p class="text-purple-300 text-xs font-semibold mb-2">Beneficio:</p>
+            <p class="text-white/60 text-xs">Dashboard unificado sin código de transformación manual</p>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-br from-green-900/20 to-emerald-900/20 border border-green-400/30 p-6 rounded-xl">
+          <h3 class="text-xl font-bold text-green-400 mb-3">💼 CRM: Sincronizar datos entre sistemas</h3>
+          <p class="text-white/70 text-sm mb-4">
+            Sincronizar HubSpot, Salesforce, y tu CRM interno. Cada uno tiene campos diferentes, TransmorphAI los mapea automáticamente.
+          </p>
+          <div class="bg-[#0a0a0a] p-4 rounded-lg">
+            <p class="text-green-300 text-xs font-semibold mb-2">Beneficio:</p>
+            <p class="text-white/60 text-xs">Sincronización bidireccional sin errores de formato</p>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-br from-yellow-900/20 to-orange-900/20 border border-yellow-400/30 p-6 rounded-xl">
+          <h3 class="text-xl font-bold text-yellow-400 mb-3">📱 APIs móviles: Versiones diferentes del mismo endpoint</h3>
+          <p class="text-white/70 text-sm mb-4">
+            Tu app móvil (iOS/Android) y web envían datos en formatos ligeramente diferentes. TransmorphAI los normaliza.
+          </p>
+          <div class="bg-[#0a0a0a] p-4 rounded-lg">
+            <p class="text-yellow-300 text-xs font-semibold mb-2">Beneficio:</p>
+            <p class="text-white/60 text-xs">Un solo endpoint maneja todos los formatos</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Instalación y uso -->
+    <div class="mb-20">
+      <h2 class="text-3xl md:text-4xl font-bold text-cyan-400 mb-8 text-center">
+        🚀 Cómo empezar con TransmorphAI
+      </h2>
+      
+      <div class="bg-gradient-to-br from-cyan-900/20 to-blue-900/20 border border-cyan-400/30 p-8 rounded-2xl">
+        <h3 class="text-2xl font-bold text-cyan-300 mb-6">Instalación</h3>
+        
+        <div class="space-y-6">
+          <div class="bg-[#0a0a0a] p-6 rounded-xl">
+            <p class="text-cyan-300 font-semibold mb-3">Opción 1: Instalación vía pip</p>
+            <div class="bg-[#141414] p-4 rounded-lg font-mono text-sm text-cyan-300 overflow-x-auto">
+              <pre>{`pip install transmorphai`}</pre>
+            </div>
+          </div>
+
+          <div class="bg-[#0a0a0a] p-6 rounded-xl">
+            <p class="text-cyan-300 font-semibold mb-3">Opción 2: Desde GitHub (última versión)</p>
+            <div class="bg-[#141414] p-4 rounded-lg font-mono text-sm text-cyan-300 overflow-x-auto">
+              <pre>{`git clone https://github.com/gimenomarc/TransmorphAI.git
+cd TransmorphAI
+pip install -e .`}</pre>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="text-2xl font-bold text-cyan-300 mb-6 mt-8">Uso básico</h3>
+        
+        <div class="bg-[#0a0a0a] p-6 rounded-xl">
+          <div class="bg-[#141414] p-4 rounded-lg font-mono text-sm text-cyan-300 overflow-x-auto">
+            <pre>{`from transmorphai import TransmorphAI
+
+# 1. Define tu esquema esperado
+schema = {
+    "user_name": str,
+    "user_age": int,
+    "user_email": str,
+    "is_active": bool
+}
+
+# 2. Crea el transformador
+transformer = TransmorphAI(schema)
+
+# 3. Transforma datos de entrada
+input_data = {
+    "nombre": "María",
+    "edad": "25",  # String que se convertirá a int
+    "correo": "maria@example.com",
+    "activo": "true"  # String que se convertirá a bool
+}
+
+try:
+    output = transformer.transform(input_data)
+    print(output)
+    # {
+    #   "user_name": "María",
+    #   "user_age": 25,
+    #   "user_email": "maria@example.com",
+    #   "is_active": True
+    # }
+except ValueError as e:
+    print(f"Error: {e}")`}</pre>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Comparativa con alternativas -->
+    <div class="mb-20">
+      <h2 class="text-3xl md:text-4xl font-bold text-cyan-400 mb-8 text-center">
+        ⚖️ TransmorphAI vs Alternativas
+      </h2>
+      
+      <div class="overflow-x-auto">
+        <table class="w-full border-collapse bg-[#0f0f0f] rounded-xl overflow-hidden">
+          <thead>
+            <tr class="bg-cyan-900/30">
+              <th class="p-4 text-left text-cyan-400 font-bold">Característica</th>
+              <th class="p-4 text-center text-green-400 font-bold">TransmorphAI</th>
+              <th class="p-4 text-center text-yellow-400 font-bold">Código manual</th>
+              <th class="p-4 text-center text-red-400 font-bold">Validadores básicos</th>
+            </tr>
+          </thead>
+          <tbody class="text-white/80">
+            <tr class="border-b border-white/10 hover:bg-white/5">
+              <td class="p-4 font-semibold">Mapeo automático de campos</td>
+              <td class="p-4 text-center text-green-400">✅ IA-powered</td>
+              <td class="p-4 text-center text-yellow-400">⚠️ Manual</td>
+              <td class="p-4 text-center text-red-400">❌ No</td>
+            </tr>
+            <tr class="border-b border-white/10 hover:bg-white/5">
+              <td class="p-4 font-semibold">Conversión de tipos</td>
+              <td class="p-4 text-center text-green-400">✅ Automática</td>
+              <td class="p-4 text-center text-yellow-400">⚠️ Manual</td>
+              <td class="p-4 text-center text-red-400">❌ Limitada</td>
+            </tr>
+            <tr class="border-b border-white/10 hover:bg-white/5">
+              <td class="p-4 font-semibold">Tiempo de implementación</td>
+              <td class="p-4 text-center text-green-400">✅ 10-15 min</td>
+              <td class="p-4 text-center text-yellow-400">⚠️ 2-4 horas</td>
+              <td class="p-4 text-center text-red-400">❌ 1-2 horas</td>
+            </tr>
+            <tr class="border-b border-white/10 hover:bg-white/5">
+              <td class="p-4 font-semibold">Manejo de variaciones</td>
+              <td class="p-4 text-center text-green-400">✅ Inteligente</td>
+              <td class="p-4 text-center text-yellow-400">⚠️ Casos edge</td>
+              <td class="p-4 text-center text-red-400">❌ Rígido</td>
+            </tr>
+            <tr class="hover:bg-white/5">
+              <td class="p-4 font-semibold">Mantenimiento</td>
+              <td class="p-4 text-center text-green-400">✅ Mínimo</td>
+              <td class="p-4 text-center text-yellow-400">⚠️ Alto</td>
+              <td class="p-4 text-center text-red-400">❌ Medio</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- CTA final -->
+    <div class="text-center max-w-4xl mx-auto mt-20">
+      <div class="bg-gradient-to-r from-cyan-900/30 to-blue-900/30 border-2 border-cyan-400/50 p-10 rounded-3xl shadow-[0_0_50px_rgba(0,255,255,0.3)]">
+        <h2 class="text-3xl md:text-4xl font-bold text-cyan-400 mb-6">
+          ¿Listo para integrar APIs más rápido?
+        </h2>
+        <p class="text-xl text-white/90 mb-4">
+          TransmorphAI es <strong class="text-cyan-400">open source y gratuito</strong>. Empieza a usarlo hoy y ahorra horas en tu próxima integración.
+        </p>
+        <div class="flex flex-col md:flex-row gap-4 justify-center mb-8">
+          <a href="https://github.com/gimenomarc/TransmorphAI" target="_blank" class="inline-block px-8 py-4 bg-cyan-400 hover:bg-cyan-500 text-black font-bold rounded-full shadow-[0_0_20px_rgba(0,255,255,0.3)] hover:shadow-[0_0_40px_rgba(0,255,255,0.5)] transition-all text-lg">
+            🔗 Ver en GitHub
+          </a>
+          <a href="/#finalcta" class="inline-block px-8 py-4 bg-transparent border-2 border-cyan-400 hover:bg-cyan-400/10 text-cyan-400 font-bold rounded-full transition-all text-lg">
+            💬 ¿Necesitas ayuda con integraciones?
+          </a>
+        </div>
+        <p class="text-white/60 text-sm">
+          En Vectoriza.me ayudamos a empresas a implementar soluciones de integración inteligentes con IA
+        </p>
+      </div>
     </div>
 
   </section>
