@@ -1,14 +1,29 @@
-import Hyperspeed from '../reactbits/Hyperspeed.jsx';
+import FloatingLines from '../reactbits/FloatingLines.jsx';
 import { motion } from 'framer-motion';
 
 export default function Intro() {
   return (
     <section id="intro" className="snap-start h-screen w-full overflow-hidden flex items-center justify-center bg-black relative px-6">
-      {/* Fondo animado */}
-      <Hyperspeed className="pointer-events-none" />
+      {/* Fondo animado - líneas sutiles en tonos cyan/oscuro, alineado con la identidad */}
+      <div className="absolute inset-0 z-0">
+        <FloatingLines
+          enabledWaves={['top', 'middle', 'bottom']}
+          lineCount={[6, 10, 12]}
+          lineDistance={[6, 5, 4]}
+          bendRadius={4.0}
+          bendStrength={-0.25}
+          animationSpeed={0.6}
+          interactive={true}
+          parallax={true}
+          mixBlendMode="normal"
+          linesGradient={['#0e7490', '#155e75', '#164e63']}
+        />
+        {/* Overlay sutil para bajar intensidad del fondo y priorizar el texto */}
+        <div className="absolute inset-0 z-[1] bg-black/25 pointer-events-none" aria-hidden="true" />
+      </div>
 
       {/* Contenido centrado */}
-      <div className="relative z-10 text-center max-w-2xl">
+      <div className="relative z-10 text-center max-w-2xl [text-shadow:0_0_40px_rgba(0,0,0,0.6)]">
         <motion.h1
           className="text-4xl md:text-6xl font-extrabold tracking-tight text-white transition cursor-pointer select-none"
           initial={{ opacity: 0 }}
