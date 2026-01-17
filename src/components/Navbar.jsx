@@ -18,15 +18,15 @@ export default function Navbar() {
   };
 
   const links = [
-    { id: 'intro', label: 'Inicio' },
-    { id: 'hero', label: 'Servicios' },
-    { id: 'features', label: 'Agentes & Web' },
-    { id: 'usecases', label: 'Casos reales' },
-    { id: 'benefits', label: 'Impacto' },
-    { id: 'blog', label: 'Blog' },
-    { id: 'howitworks', label: 'Proceso' },
-    { id: 'about', label: 'Sobre mí' },
-    { id: 'finalcta', label: 'Contacto' },
+    { id: 'intro', label: 'Inicio', keywords: 'IA Empresarial, Agentes IA, RAG' },
+    { id: 'hero', label: 'Servicios IA', keywords: 'Agentes Autónomos, RAG, Insta Web, Videos IA, Formación IA' },
+    { id: 'features', label: 'Soluciones IA', keywords: 'Agentes IA, Sistemas RAG, Flujos Agénticos, Automatización IA' },
+    { id: 'usecases', label: 'Casos de Uso', keywords: 'Casos Reales IA, Implementación IA, Ejemplos IA Empresarial' },
+    { id: 'benefits', label: 'ROI & Resultados', keywords: 'Impacto IA, Reducción Costes, Ahorro Tiempo, Resultados IA' },
+    { id: 'blog', label: 'Blog IA', keywords: 'Artículos IA, Guías RAG, Tendencias IA, Mejores Prácticas IA' },
+    { id: 'howitworks', label: 'Proceso', keywords: 'Cómo Funciona, Implementación IA, Metodología IA' },
+    { id: 'about', label: 'Experto IA', keywords: 'Consultor IA, Especialista IA, Marc Gimeno' },
+    { id: 'finalcta', label: 'Contacto', keywords: 'Solicitar Propuesta, Consulta IA, Empezar Proyecto IA' },
   ];
 
   return (
@@ -51,6 +51,7 @@ export default function Navbar() {
               key={link.label}
               href={link.href}
               className="text-white/80 hover:text-cyan-400 transition duration-300 cursor-pointer"
+              title={link.keywords || link.label}
             >
               {link.label}
             </a>
@@ -59,6 +60,7 @@ export default function Navbar() {
               key={link.id}
               onClick={() => scrollTo(link.id)}
               className="text-white/80 hover:text-cyan-400 transition duration-300 cursor-pointer"
+              title={link.keywords || link.label}
             >
               {link.label}
             </button>
@@ -101,6 +103,7 @@ export default function Navbar() {
                   href={link.href}
                   className="text-white/80 hover:text-cyan-400 transition text-left cursor-pointer"
                   onClick={() => setIsOpen(false)}
+                  title={link.keywords || link.label}
                 >
                   {link.label}
                 </a>
@@ -109,6 +112,7 @@ export default function Navbar() {
                   key={link.id}
                   onClick={() => scrollTo(link.id)}
                   className="text-white/80 hover:text-cyan-400 transition text-left cursor-pointer"
+                  title={link.keywords || link.label}
                 >
                   {link.label}
                 </button>

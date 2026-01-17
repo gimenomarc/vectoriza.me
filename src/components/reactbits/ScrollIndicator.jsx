@@ -4,13 +4,15 @@
 import { useEffect, useState } from 'react';
 
 const sections = [
-  { id: 'intro', label: 'Inicio' },
-  { id: 'hero', label: 'Qué hago' },
-  { id: 'features', label: 'Soluciones IA' },
-  { id: 'benefits', label: 'Antes y después' },
-  { id: 'usecases', label: 'Casos de uso' },
-  { id: 'howitworks', label: 'Proceso' },
-  { id: 'finalcta', label: 'Contacto' }
+  { id: 'intro', label: 'Inicio', keywords: 'IA Empresarial, Agentes IA, RAG' },
+  { id: 'hero', label: 'Servicios IA', keywords: 'Agentes Autónomos, RAG, Insta Web, Videos IA' },
+  { id: 'features', label: 'Soluciones IA', keywords: 'Agentes IA, Sistemas RAG, Flujos Agénticos' },
+  { id: 'usecases', label: 'Casos de Uso', keywords: 'Casos Reales IA, Implementación IA' },
+  { id: 'benefits', label: 'ROI & Resultados', keywords: 'Impacto IA, Reducción Costes' },
+  { id: 'blog', label: 'Blog IA', keywords: 'Artículos IA, Guías RAG, Tendencias IA' },
+  { id: 'howitworks', label: 'Proceso', keywords: 'Cómo Funciona, Implementación IA' },
+  { id: 'about', label: 'Experto IA', keywords: 'Consultor IA, Especialista IA' },
+  { id: 'finalcta', label: 'Contacto', keywords: 'Solicitar Propuesta, Consulta IA' }
 ];
 
 export default function ScrollIndicator() {
@@ -50,7 +52,7 @@ export default function ScrollIndicator() {
 
   return (
     <div className="fixed right-6 top-1/2 transform -translate-y-1/2 z-50 hidden md:flex flex-col gap-4">
-      {sections.map(({ id, label }) => (
+      {sections.map(({ id, label, keywords }) => (
         <a
           key={id}
           href={`#${id}`}
@@ -59,7 +61,7 @@ export default function ScrollIndicator() {
               ? 'bg-cyan-400 border-cyan-400 shadow-[0_0_10px_rgba(0,255,255,0.6)] scale-125'
               : 'bg-white/10 border-white/20 hover:bg-cyan-400/30'
           }`}
-          title={label}
+          title={keywords ? `${label} - ${keywords}` : label}
         />
       ))}
     </div>
